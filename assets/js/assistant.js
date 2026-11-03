@@ -61,11 +61,11 @@
       answer: `<p>The N-400 currently costs <strong>$760 on paper or $710 online</strong>.</p>
         <p><strong>You may be able to pay less:</strong></p>
         <ul>
-          <li><strong>$380 reduced fee</strong> if your household income is at or below
+          <li>$380 reduced fee if your household income is at or below
           400% of the Federal Poverty Guidelines (Form I-942, paper filing only)</li>
-          <li><strong>Full waiver</strong> if you receive a means-tested benefit, are
+          <li>Full waiver if you receive a means-tested benefit, are
           under 150% of the guidelines, or face hardship (Form I-912)</li>
-          <li><strong>No fee at all</strong> for military naturalization applicants</li>
+          <li>No fee at all for military naturalization applicants</li>
         </ul>
         <p>That 400% threshold is higher than most people assume — it is worth checking.</p>
         <p><strong>Note:</strong> a rule proposed in June 2026 would raise the fee to
@@ -96,7 +96,7 @@
           <li>The site has <strong>no database</strong> — your question goes straight
           into your own email program</li>
           <li>We <strong>delete your message within 7 days</strong> of helping you</li>
-          <li><strong>No cookies, no analytics, no tracking</strong> of any kind</li>
+          <li>No cookies, no analytics, no tracking of any kind</li>
           <li>This chat runs entirely in your browser — nothing you type to me is sent
           anywhere</li>
         </ul>
@@ -159,9 +159,9 @@
       answer: `<p>Which test you take depends on your <strong>filing date</strong>, not
         your interview date:</p>
         <ul>
-          <li><strong>Filed before Oct 20, 2025:</strong> 10 questions drawn from 100,
+          <li>Filed before Oct 20, 2025: 10 questions drawn from 100,
           6 correct to pass</li>
-          <li><strong>Filed on or after Oct 20, 2025:</strong> 20 questions drawn from
+          <li>Filed on or after Oct 20, 2025: 20 questions drawn from
           128, 12 correct to pass</li>
         </ul>
         <p>It is spoken, not written, and the officer stops once you pass. Over 75% of the
@@ -178,9 +178,9 @@
       answer: `<p>The English requirement has three parts, and the standard is
         <strong>basic English, not fluency</strong>:</p>
         <ul>
-          <li><strong>Reading</strong> — read one sentence aloud correctly (3 attempts)</li>
-          <li><strong>Writing</strong> — write one dictated sentence (3 attempts)</li>
-          <li><strong>Speaking</strong> — there is no separate test; the officer assesses
+          <li>Reading — read one sentence aloud correctly (3 attempts)</li>
+          <li>Writing — write one dictated sentence (3 attempts)</li>
+          <li>Speaking — there is no separate test; the officer assesses
           this across the whole interview</li>
         </ul>
         <p>An accent is not a problem. Asking the officer to repeat something is not a
@@ -196,13 +196,13 @@
                  'qualify', 'requirements', 'which path', 'where do i start'],
       answer: `<p>There is no single route. The common ones:</p>
         <ul>
-          <li><strong>Green card holder</strong> — 5 years, then file N-400</li>
-          <li><strong>Married to a citizen</strong> — 3 years instead of 5</li>
-          <li><strong>Child of a citizen</strong> — often a citizen already, no test needed</li>
-          <li><strong>Refugee or asylee</strong> — residence is often backdated, so you
+          <li>Green card holder — 5 years, then file N-400</li>
+          <li>Married to a citizen — 3 years instead of 5</li>
+          <li>Child of a citizen — often a citizen already, no test needed</li>
+          <li>Refugee or asylee — residence is often backdated, so you
           may qualify sooner than you think</li>
-          <li><strong>Military service</strong> — the most generous provisions in the law</li>
-          <li><strong>No green card yet</strong> — that is your actual next step</li>
+          <li>Military service — the most generous provisions in the law</li>
+          <li>No green card yet — that is your actual next step</li>
         </ul>
         <p><a href="pathways.html">See all six pathways in detail &rarr;</a></p>
         <p>If you are not sure which is yours, describe your situation and
@@ -215,11 +215,11 @@
       answer: `<p>Our <a href="redirection.html">Redirection page</a> lists every official
         form, linked straight to USCIS. The common ones:</p>
         <ul>
-          <li><strong>N-400</strong> — the citizenship application</li>
-          <li><strong>I-90</strong> — renew or replace a green card</li>
-          <li><strong>N-600</strong> — proof you are <strong>already</strong> a citizen</li>
-          <li><strong>I-130</strong> — petition for a family member</li>
-          <li><strong>AR-11</strong> — change of address (required within 10 days)</li>
+          <li>N-400 — the citizenship application</li>
+          <li>I-90 — renew or replace a green card</li>
+          <li>N-600 — proof you are <strong>already</strong> a citizen</li>
+          <li>I-130 — petition for a family member</li>
+          <li>AR-11 — change of address (required within 10 days)</li>
         </ul>
         <p><strong>Two rules that save people money:</strong> every official form is free
         to download, and you should always download it fresh from uscis.gov the week you
@@ -265,9 +265,9 @@
                  'certificate', 'congressionally recognized'],
       answer: `<p>We have received two recognitions in 2026:</p>
         <ul>
-          <li><strong>Princeton Prize in Race Relations</strong> — Certificate of
+          <li>Princeton Prize in Race Relations — Certificate of
           Accomplishment, Eastern Pennsylvania and Delaware region (April 19, 2026)</li>
-          <li><strong>Certificate of Special Congressional Recognition</strong> — from
+          <li>Certificate of Special Congressional Recognition — from
           Pennsylvania's 6th congressional district (May 19, 2026)</li>
         </ul>
         <p>To be precise about it: both recognise community service. Neither is a
@@ -324,10 +324,10 @@
         rather than relying on any article.</p>
         <p>Two things worth knowing if you hold TPS:</p>
         <ul>
-          <li><strong>Pursue a durable status now</strong>, while you still have work
+          <li>Pursue a durable status now, while you still have work
           authorization. Since <em>Mullin v. Doe</em> (2026), litigation is much less
           likely to pause a termination.</li>
-          <li><strong>The most commonly missed option:</strong> a U.S. citizen child who
+          <li>The most commonly missed option: a U.S. citizen child who
           has turned 21 can petition for a parent. For people who have held TPS since the
           1990s, those children are now well past 21.</li>
         </ul>
@@ -340,15 +340,15 @@
                  'guarantee', 'too good'],
       answer: `<p>A few hard rules that protect you:</p>
         <ul>
-          <li><strong>A <em>notario público</em> is not a lawyer</strong> in the U.S. sense,
+          <li>A <em>notario público</em> is not a lawyer in the U.S. sense,
           whatever it means in your home country</li>
-          <li><strong>Nobody can guarantee an outcome.</strong> Real representatives are
+          <li>Nobody can guarantee an outcome. Real representatives are
           not permitted to</li>
-          <li><strong>There is no way to pay to expedite</strong> an N-400</li>
-          <li><strong>The Diversity Visa lottery is free to enter</strong></li>
-          <li><strong>Official forms are free to download</strong> — you only pay the
+          <li>There is no way to pay to expedite an N-400</li>
+          <li>The Diversity Visa lottery is free to enter</li>
+          <li>Official forms are free to download — you only pay the
           government filing fee</li>
-          <li><strong>USCIS will not call you demanding payment</strong> or threaten you
+          <li>USCIS will not call you demanding payment or threaten you
           over the phone</li>
         </ul>
         <p>Verify anyone claiming to represent you against the
@@ -381,9 +381,9 @@
     about this website and the basics of the process.</p>
     <p>Two things that will help more than I can:</p>
     <ul>
-      <li><strong><a href="inquiries.html">Send us an inquiry</a></strong> — a real person
+      <li><a href="inquiries.html">Send us an inquiry</a> — a real person
       replies in 24&ndash;48 hours, free, and we never ask who you are</li>
-      <li><strong><a href="articles.html">Search our articles</a></strong> — 59 posts on
+      <li><a href="articles.html">Search our articles</a> — 59 posts on
       specific policy changes</li>
     </ul>
     <p>Or try asking me about: privacy, fees, the civics test, pathways, forms, delays,

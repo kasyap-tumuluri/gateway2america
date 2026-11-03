@@ -151,13 +151,12 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
   line-height: 1.2;
   transition: transform var(--t-fast) var(--ease-out),
               background var(--t-fast) var(--ease-out),
-              border-color var(--t-fast) var(--ease-out),
-              box-shadow var(--t-fast) var(--ease-out);
+              border-color var(--t-fast) var(--ease-out);
 }
 .btn:active { transform: translateY(1px); }
 
-.btn--primary { background: var(--gold); color: var(--ink); box-shadow: var(--shadow-sm); }
-.btn--primary:hover { background: var(--gold-bright); color: var(--ink); box-shadow: var(--shadow); }
+.btn--primary { background: var(--gold); color: var(--ink); }
+.btn--primary:hover { background: var(--gold-bright); color: var(--ink); }
 
 .btn--ghost { background: transparent; color: var(--paper); border-color: rgba(250, 246, 239, 0.3); }
 .btn--ghost:hover { background: rgba(250, 246, 239, 0.1); border-color: rgba(250, 246, 239, 0.55); color: var(--paper); }
@@ -585,6 +584,104 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
 }
 
 /* ==========================================================================
+   6b. Register — replaces bulleted lists with bold lead-ins
+
+   A term set against its explanation across a hairline, the way a printed
+   reference book sets them. No bullet glyphs, no "Label. Sentence." runs.
+   ========================================================================== */
+
+.register { margin: var(--s-5) 0 0; }
+.register > div {
+  display: grid;
+  grid-template-columns: minmax(7rem, 14rem) minmax(0, 1fr);
+  gap: var(--s-3) var(--s-6);
+  padding: var(--s-4) 0;
+  border-top: 1px solid var(--border);
+}
+.register > div:last-child { border-bottom: 1px solid var(--border); }
+.register dt {
+  font-family: var(--font-display);
+  font-size: var(--fs-base);
+  color: var(--text-strong);
+  line-height: var(--lh-snug);
+}
+.register dd {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--slate-soft);
+  line-height: 1.6;
+}
+.register dd > p { margin-bottom: var(--s-3); }
+
+/* On ink backgrounds. */
+.section--ink .register > div,
+.section--ink .register > div:last-child { border-color: var(--ink-line); }
+.section--ink .register dt { color: var(--paper); }
+.section--ink .register dd { color: var(--ink-soft); }
+
+/* Inside a 3D panel the columns are too narrow to split, so they stack. */
+.panel3d .register > div { grid-template-columns: 1fr; gap: var(--s-2); padding: var(--s-3) 0; }
+.panel3d .register dt { font-size: var(--fs-sm); }
+
+@media (max-width: 620px) {
+  .register > div { grid-template-columns: 1fr; gap: var(--s-2); }
+}
+
+/* ==========================================================================
+   6c. Tally — the figures, set in running prose
+
+   A four-across strip of big numbers reads as a metrics dashboard. These
+   are the same figures carried inside sentences instead.
+   ========================================================================== */
+
+.tally {
+  font-size: var(--fs-md);
+  line-height: 1.95;
+  max-width: 58ch;
+  color: var(--ink-soft);
+}
+.tally__fig {
+  font-family: var(--font-display);
+  font-size: 2.1em;
+  font-weight: 500;
+  line-height: 0.8;
+  letter-spacing: -0.03em;
+  color: var(--gold-bright);
+  font-variant-numeric: tabular-nums;
+  padding-inline: 0.06em;
+}
+.tally__caveat {
+  margin-top: var(--s-5);
+  font-size: var(--fs-sm);
+  color: var(--slate-soft);
+  max-width: 54ch;
+}
+.section--ink .tally__caveat { color: var(--ink-soft); opacity: 0.8; }
+
+/* Prose lists read as hairline rows rather than a column of bullet glyphs.
+   Applies to article bodies and the terms page. */
+.prose ul:not(.register):not(.stack3d) {
+  list-style: none;
+  padding: 0;
+  margin: var(--s-5) 0;
+}
+.prose ul:not(.register):not(.stack3d) > li {
+  margin: 0;
+  padding: var(--s-3) 0;
+  border-top: 1px solid var(--border);
+  line-height: 1.65;
+}
+.prose ul:not(.register):not(.stack3d) > li:last-child {
+  border-bottom: 1px solid var(--border);
+}
+.section--ink .prose ul:not(.register):not(.stack3d) > li,
+.section--ink .prose ul:not(.register):not(.stack3d) > li:last-child {
+  border-color: var(--ink-line);
+}
+/* The contents nav and source list keep their own compact treatment. */
+.card .prose ul > li, .sources li { border: 0; padding: 0; }
+
+/* ==========================================================================
    7. Cards
    ========================================================================== */
 
@@ -594,15 +691,10 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
   border-radius: var(--radius-lg);
   padding: var(--s-5);
   display: flex; flex-direction: column;
-  transition: transform var(--t-base) var(--ease-out), box-shadow var(--t-base) var(--ease-out), border-color var(--t-base) var(--ease-out);
+  transition: border-color var(--t-base) var(--ease-out);
 }
 .card--link { text-decoration: none; color: inherit; }
-.card--link:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(224, 163, 65, 0.5);
-  color: inherit;
-}
+.card--link:hover { border-color: var(--gold); color: inherit; }
 .card__icon {
   width: 2.75rem; height: 2.75rem;
   display: grid; place-items: center;
@@ -648,14 +740,12 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
   transform-style: preserve-3d;
   transform: rotateY(var(--fold));
   transform-origin: left center;
-  box-shadow: -10px 16px 34px -22px rgba(11, 23, 37, 0.55);
-  transition: transform 520ms var(--ease-soft), box-shadow 520ms var(--ease-soft),
+  transition: transform 520ms var(--ease-soft),
               border-color var(--t-base) var(--ease-out);
 }
 .screen3d > .panel3d:nth-child(even) {
   transform: rotateY(calc(var(--fold) * -1));
   transform-origin: right center;
-  box-shadow: 10px 16px 34px -22px rgba(11, 23, 37, 0.55);
 }
 /* The hinge: a lit edge standing off the panel face in Z. */
 .panel3d::before {
@@ -669,8 +759,7 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
 }
 .panel3d:hover, .panel3d:focus-visible {
   transform: rotateY(0deg) translateZ(34px);
-  box-shadow: 0 30px 60px -28px rgba(11, 23, 37, 0.5);
-  border-color: rgba(224, 163, 65, 0.55);
+  border-color: var(--gold);
   color: inherit;
 }
 .panel3d__num {
@@ -712,8 +801,7 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
   border: 1px solid var(--ink-line);
   transform-style: preserve-3d;
   transform: rotateX(7deg) rotateY(-11deg) translateZ(var(--z, 0px));
-  transition: transform 560ms var(--ease-soft), box-shadow 560ms var(--ease-soft);
-  box-shadow: 14px 18px 36px -24px rgba(0, 0, 0, 0.9);
+  transition: transform 560ms var(--ease-soft);
 }
 /* Extruded bottom face — what makes a plate read as a solid, not a rectangle. */
 .plate3d::after {
@@ -737,7 +825,6 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
 .plate3d--paper {
   background: linear-gradient(145deg, var(--surface) 0%, var(--surface-sunk) 100%);
   border-color: var(--border);
-  box-shadow: 14px 18px 34px -26px rgba(11, 23, 37, 0.55);
 }
 .plate3d--paper h4 { color: var(--ink); }
 .plate3d--paper p { color: var(--slate-soft); }
@@ -757,8 +844,7 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
   transform-style: preserve-3d;
   transform: rotateY(-9deg);
   transform-origin: right center;
-  transition: transform 520ms var(--ease-soft), box-shadow 520ms var(--ease-soft);
-  box-shadow: 16px 22px 40px -26px rgba(11, 23, 37, 0.6);
+  transition: transform 520ms var(--ease-soft);
 }
 .monolith::after {
   content: "";
@@ -801,18 +887,18 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
 .pathway:last-child { padding-bottom: 0; }
 
 .pathway__marker { grid-row: 1 / -1; display: flex; flex-direction: column; align-items: center; }
+/* A set numeral rather than a badge in a circle. */
 .pathway__dot {
-  width: 3.5rem; height: 3.5rem; flex-shrink: 0;
-  border-radius: 50%;
-  display: grid; place-items: center;
-  background: var(--ink);
-  color: var(--gold);
+  flex-shrink: 0;
   font-family: var(--font-display);
-  font-size: 1.2rem; font-weight: 600;
-  border: 1px solid var(--ink-line);
+  font-size: 2.1rem; font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--gold-deep);
+  font-variant-numeric: tabular-nums;
   position: relative; z-index: 1;
 }
-.pathway__line { flex: 1; width: 2px; background: var(--border); margin-top: var(--s-2); min-height: 2rem; }
+.pathway__line { flex: 1; width: 1px; background: var(--border); margin-top: var(--s-3); min-height: 2rem; }
 .pathway:last-child .pathway__line { display: none; }
 
 .pathway__body { padding-bottom: var(--s-2); }
@@ -822,17 +908,21 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
   letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--gold-deep); margin-bottom: var(--s-3);
 }
-.pathway__steps { list-style: none; padding: 0; margin: var(--s-4) 0 0; }
-.pathway__steps li { position: relative; padding-left: 1.6rem; font-size: var(--fs-sm); margin-bottom: var(--s-3); }
-.pathway__steps li::before {
-  content: ''; position: absolute; left: 0; top: 0.55em;
-  width: 0.5rem; height: 0.5rem; border-radius: 50%;
-  background: var(--gold);
+/* Hairline-separated rows instead of a column of dots. */
+.pathway__steps { list-style: none; padding: 0; margin: var(--s-5) 0 0; }
+.pathway__steps li {
+  font-size: var(--fs-sm);
+  color: var(--slate-soft);
+  line-height: 1.65;
+  margin: 0;
+  padding: var(--s-3) 0;
+  border-top: 1px solid var(--border);
 }
+.pathway__steps li:last-child { border-bottom: 1px solid var(--border); }
 
 @media (max-width: 620px) {
-  .pathway { grid-template-columns: 2.5rem 1fr; gap: 0 var(--s-4); }
-  .pathway__dot { width: 2.5rem; height: 2.5rem; font-size: 1rem; }
+  .pathway { grid-template-columns: 2.25rem 1fr; gap: 0 var(--s-4); }
+  .pathway__dot { font-size: 1.5rem; }
 }
 
 /* ==========================================================================
@@ -917,11 +1007,9 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   text-decoration: none; color: inherit;
-  transition: transform var(--t-base) var(--ease-out), box-shadow var(--t-base) var(--ease-out), border-color var(--t-base) var(--ease-out);
+  transition: border-color var(--t-base) var(--ease-out);
 }
 .article-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
   border-color: rgba(224, 163, 65, 0.5);
   color: inherit;
 }
@@ -1034,7 +1122,7 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
   text-decoration: none; color: inherit;
   transition: border-color var(--t-fast) var(--ease-out), transform var(--t-fast) var(--ease-out), box-shadow var(--t-fast) var(--ease-out);
 }
-.res:hover { border-color: var(--gold); transform: translateX(3px); color: inherit; box-shadow: var(--shadow-sm); }
+.res:hover { border-color: var(--gold); color: inherit; }
 .res__name { font-weight: 650; color: var(--text-strong); font-size: var(--fs-sm); margin-bottom: 0.15rem; }
 .res__desc { font-size: var(--fs-xs); color: var(--slate-soft); line-height: 1.5; }
 .res__code { font-family: var(--font-display); font-size: var(--fs-sm); color: var(--gold-deep); font-weight: 600; white-space: nowrap; }

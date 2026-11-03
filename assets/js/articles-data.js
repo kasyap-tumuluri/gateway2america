@@ -19,14 +19,20 @@ window.G2A_ARTICLES = [
     specific for a search engine.</p>
     <p>That gap is what we work in. We are not attorneys and we do not give legal
     advice. What we offer is three things:</p>
-    <ul>
-      <li><strong>Answers to questions</strong> about how the process works, usually
-      within 24&ndash;48 hours.</li>
-      <li><strong>Redirection</strong> &mdash; pointing you to the correct official
-      form, fee schedule, or free legal-aid organization instead of a paid middleman.</li>
-      <li><strong>Citizenship test tutoring</strong>, free, for the civics and
-      English portions.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Answers to questions</dt>
+        <dd>About how the process works, usually within 24&ndash;48 hours.</dd>
+      </div>
+      <div>
+        <dt>Redirection</dt>
+        <dd>Pointing you to the correct official form, fee schedule, or free legal-aid organization instead of a paid middleman.</dd>
+      </div>
+      <div>
+        <dt>Citizenship test tutoring</dt>
+        <dd>Free, for the civics and English portions.</dd>
+      </div>
+    </dl>
     <p>We also keep this articles section, where we translate the policy changes
     that actually affect people into plain language and link the official notice so
     you can verify everything yourself.</p>
@@ -81,14 +87,20 @@ window.G2A_ARTICLES = [
     <h3>Trips abroad</h3>
     <p>Continuous residence is about whether you kept the United States as your home.
     Long absences can break it:</p>
-    <ul>
-      <li><strong>Under six months</strong> &mdash; generally no problem.</li>
-      <li><strong>Six months to one year</strong> &mdash; USCIS may presume you broke
-      continuous residence. You can rebut that presumption with evidence that you kept
-      ties here: a home, a job, tax filings, family.</li>
-      <li><strong>One year or more</strong> &mdash; this generally breaks continuous
-      residence outright, and your clock restarts.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Under six months</dt>
+        <dd>Generally no problem.</dd>
+      </div>
+      <div>
+        <dt>Six months to one year</dt>
+        <dd>USCIS may presume you broke continuous residence. You can rebut that presumption with evidence that you kept ties here: a home, a job, tax filings, family.</dd>
+      </div>
+      <div>
+        <dt>One year or more</dt>
+        <dd>This generally breaks continuous residence outright, and your clock restarts.</dd>
+      </div>
+    </dl>
     <h3>Physical presence is a separate test</h3>
     <p>This trips people up. Alongside continuous residence, you must also have been
     physically present in the U.S. for at least half the required period
@@ -282,16 +294,20 @@ window.G2A_ARTICLES = [
     <p>Assume that what you post publicly can be read by an officer deciding your
     case. That is not a reason to panic or to delete your life &mdash; it is a reason
     for one specific kind of care:</p>
-    <ul>
-      <li><strong>Consistency matters most.</strong> The real risk is a contradiction
-      between your application and your public posts &mdash; an employer, a marriage
-      date, a trip, a residence. Officers look for inconsistency.</li>
-      <li><strong>Review your own forms against your own timeline.</strong> If your
-      posts say something different from your N-400, work out why before an officer
-      asks.</li>
-      <li><strong>Do not fabricate or scrub to deceive.</strong> Misrepresentation is
-      far more damaging than whatever you were trying to hide.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Consistency matters most</dt>
+        <dd>The real risk is a contradiction between your application and your public posts &mdash; an employer, a marriage date, a trip, a residence. Officers look for inconsistency.</dd>
+      </div>
+      <div>
+        <dt>Review your own forms against your own timeline</dt>
+        <dd>If your posts say something different from your N-400, work out why before an officer asks.</dd>
+      </div>
+      <div>
+        <dt>Do not fabricate or scrub to deceive</dt>
+        <dd>Misrepresentation is far more damaging than whatever you were trying to hide.</dd>
+      </div>
+    </dl>
     <p>This is an area where discretion is broad and outcomes are hard to predict. If
     you have a specific worry about your own history, that is an attorney question,
     not a website question.</p>`,
@@ -340,14 +356,16 @@ window.G2A_ARTICLES = [
     DACA are unlawful. The decision left current recipients in place while litigation
     continues.</p>
     <h3>Where things stand</h3>
-    <ul>
-      <li><strong>If you have DACA:</strong> your status and work authorization
-      continue. <strong>Renewals are being accepted and processed nationwide</strong>,
-      including in Texas.</li>
-      <li><strong>If you have never had DACA:</strong> you may submit a first-time
-      application, but USCIS <strong>will not process it</strong> at this time. It
-      sits pending.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>If you have DACA</dt>
+        <dd>Your status and work authorization continue. <strong>Renewals are being accepted and processed nationwide</strong>, including in Texas.</dd>
+      </div>
+      <div>
+        <dt>If you have never had DACA</dt>
+        <dd>You may submit a first-time application, but USCIS <strong>will not process it</strong> at this time. It sits pending.</dd>
+      </div>
+    </dl>
     <h3>What to do if you have DACA</h3>
     <p><strong>Renew early.</strong> File in the window USCIS recommends &mdash;
     roughly 120 to 150 days before your expiration &mdash; and do not let it lapse.
@@ -375,17 +393,17 @@ window.G2A_ARTICLES = [
     guessing. What you can know is the sequence, and which stages tend to stall.</p>
     <h3>The stages</h3>
     <ol>
-      <li><strong>File the N-400.</strong> A receipt notice (I-797) follows within a
+      <li>File the N-400. A receipt notice (I-797) follows within a
       few weeks. Keep it.</li>
-      <li><strong>Biometrics.</strong> Fingerprints and photograph at an application
+      <li>Biometrics. Fingerprints and photograph at an application
       support center. Often reused if you have given them before.</li>
-      <li><strong>Background checks.</strong> The invisible stage, and the usual
+      <li>Background checks. The invisible stage, and the usual
       source of long unexplained silences.</li>
-      <li><strong>Interview and tests.</strong> An officer reviews your application
+      <li>Interview and tests. An officer reviews your application
       with you and administers the English and civics tests.</li>
-      <li><strong>Decision.</strong> Granted, continued (more evidence or a retest),
+      <li>Decision. Granted, continued (more evidence or a retest),
       or denied.</li>
-      <li><strong>Oath ceremony.</strong> You are not a citizen until you take the
+      <li>Oath ceremony. You are not a citizen until you take the
       oath. Sometimes same-day, often weeks or months later.</li>
     </ol>
     <h3>Checking your own case</h3>
@@ -416,12 +434,20 @@ window.G2A_ARTICLES = [
     certain crimes, providing false testimony for an immigration benefit, habitual
     drunkenness, illegal gambling, polygamy, smuggling.</p>
     <p>And then there are the ones people genuinely do not expect:</p>
-    <ul>
-      <li><strong>Unpaid taxes</strong> or unfiled returns.</li>
-      <li><strong>Unpaid child support.</strong></li>
-      <li><strong>Failure to register for Selective Service</strong>, for men who
-      lived here between 18 and 26.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Unpaid taxes</dt>
+        <dd>Or unfiled returns.</dd>
+      </div>
+      <div>
+        <dt>Unpaid child support</dt>
+        <dd></dd>
+      </div>
+      <div>
+        <dt>Failure to register for Selective Service</dt>
+        <dd>For men who lived here between 18 and 26.</dd>
+      </div>
+    </dl>
     <p>These are frequently fixable. A payment plan with the IRS, a current child
     support arrangement, or a Selective Service status information letter can resolve
     them &mdash; but resolve them <strong>before</strong> you file, not at the interview.</p>
@@ -488,13 +514,16 @@ window.G2A_ARTICLES = [
     it is entirely avoidable. USCIS accepts only the current edition of a form, and
     an outdated edition can come back unfiled &mdash; costing you months.</p>
     <p>Two habits protect you:</p>
-    <ul>
-      <li><strong>Download the form fresh from uscis.gov the week you file.</strong>
-      Never fill out a PDF you saved months ago, and never use one from a
-      third-party site.</li>
-      <li><strong>Check the edition date</strong> in the bottom corner of the form
-      against the date shown on the official form page.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Download the form fresh from uscis.gov the week you file</dt>
+        <dd>Never fill out a PDF you saved months ago, and never use one from a third-party site.</dd>
+      </div>
+      <div>
+        <dt>Check the edition date</dt>
+        <dd>In the bottom corner of the form against the date shown on the official form page.</dd>
+      </div>
+    </dl>
     <h3>Check the fee at the same time</h3>
     <p>Fees change independently of form editions, and the wrong fee also causes
     rejection. Confirm the current amount on the USCIS fee calculator the same day
@@ -516,11 +545,16 @@ window.G2A_ARTICLES = [
     <p>The naturalization fee is a real barrier, and a lot of people who qualify for
     help never ask for it.</p>
     <h3>Current costs</h3>
-    <ul>
-      <li><strong>$760</strong> filing on paper.</li>
-      <li><strong>$710</strong> filing online &mdash; $50 cheaper for the same
-      application.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>$760</dt>
+        <dd>Filing on paper.</dd>
+      </div>
+      <div>
+        <dt>$710</dt>
+        <dd>Filing online &mdash; $50 cheaper for the same application.</dd>
+      </div>
+    </dl>
     <h3>The reduced fee</h3>
     <p>If your household income is at or below <strong>400% of the Federal Poverty
     Guidelines</strong>, you may file for a reduced fee of <strong>$380</strong>, using
@@ -563,17 +597,20 @@ window.G2A_ARTICLES = [
     date printed on the card has passed &mdash; the Federal Register notice is what
     establishes that, and it is the document to show an employer alongside your card.</p>
     <h3>What to do</h3>
-    <ul>
-      <li><strong>Re-register during the registration period.</strong> Protection
-      continues only if you re-register when USCIS tells you to. Missing that window
-      is the most common way people lose TPS they were entitled to keep.</li>
-      <li><strong>Print the Federal Register notice.</strong> If your EAD shows an
-      expired date but is auto-extended, that notice is your proof for Form I-9
-      purposes.</li>
-      <li><strong>Look beyond TPS.</strong> TPS is temporary by design and does not
-      lead to a green card on its own. If you have another possible route &mdash;
-      family, employment, asylum &mdash; it is worth getting it assessed.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Re-register during the registration period</dt>
+        <dd>Protection continues only if you re-register when USCIS tells you to. Missing that window is the most common way people lose TPS they were entitled to keep.</dd>
+      </div>
+      <div>
+        <dt>Print the Federal Register notice</dt>
+        <dd>If your EAD shows an expired date but is auto-extended, that notice is your proof for Form I-9 purposes.</dd>
+      </div>
+      <div>
+        <dt>Look beyond TPS</dt>
+        <dd>TPS is temporary by design and does not lead to a green card on its own. If you have another possible route &mdash; family, employment, asylum &mdash; it is worth getting it assessed.</dd>
+      </div>
+    </dl>
     <p>TPS designations have been changing frequently and in both directions. Always
     confirm your country's current status on the USCIS TPS page rather than relying
     on an older article.</p>`,
@@ -598,16 +635,24 @@ window.G2A_ARTICLES = [
     <p>Losing TPS does not automatically mean removal, but it does mean losing
     protection from removal and losing the work authorization that came with it. The
     priority is to find out whether you have any other basis to remain:</p>
-    <ul>
-      <li><strong>Asylum</strong>, if you fear persecution. Note the general one-year
-      filing deadline from arrival, and the exceptions to it.</li>
-      <li><strong>Family-based petitions</strong>, through a spouse, parent, or adult
-      child who is a citizen or permanent resident.</li>
-      <li><strong>Employment-based routes</strong>, or U/T visas if you have been a
-      victim of certain crimes or trafficking.</li>
-      <li><strong>Pending applications</strong> you may already have that carry their
-      own protections.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Asylum</dt>
+        <dd>If you fear persecution. Note the general one-year filing deadline from arrival, and the exceptions to it.</dd>
+      </div>
+      <div>
+        <dt>Family-based petitions</dt>
+        <dd>Through a spouse, parent, or adult child who is a citizen or permanent resident.</dd>
+      </div>
+      <div>
+        <dt>Employment-based routes</dt>
+        <dd>Or U/T visas if you have been a victim of certain crimes or trafficking.</dd>
+      </div>
+      <div>
+        <dt>Pending applications</dt>
+        <dd>You may already have that carry their own protections.</dd>
+      </div>
+    </dl>
     <p>This is a situation where free legal screening genuinely changes outcomes.
     Many organizations ran clinics specifically for affected Venezuelan nationals.
     Our <a href="redirection.html#legal-help">legal help page</a> lists directories.</p>
@@ -696,14 +741,20 @@ window.G2A_ARTICLES = [
     <p>Together these mean more review, more requests for evidence, and longer
     timelines across consular processing and family petitions.</p>
     <h3>What to expect</h3>
-    <ul>
-      <li><strong>Longer waits</strong>, including after an interview that seemed to
-      go well. Administrative processing can add weeks or months.</li>
-      <li><strong>More documentation requests</strong>, sometimes for records from
-      years earlier.</li>
-      <li><strong>More attention to online presence</strong> and to consistency
-      between your application and everything else about you on record.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Longer waits</dt>
+        <dd>Including after an interview that seemed to go well. Administrative processing can add weeks or months.</dd>
+      </div>
+      <div>
+        <dt>More documentation requests</dt>
+        <dd>Sometimes for records from years earlier.</dd>
+      </div>
+      <div>
+        <dt>More attention to online presence</dt>
+        <dd>And to consistency between your application and everything else about you on record.</dd>
+      </div>
+    </dl>
     <h3>How to prepare</h3>
     <p>It helps to build your own file before anyone asks for it. Keep every prior
     application and approval notice, along with a dated travel history. Keep proof of the relationship in a
@@ -735,16 +786,28 @@ window.G2A_ARTICLES = [
     <p>The first step is finding out what else you may be eligible for. Many
     long-term TPS holders have acquired other options over the years without
     realising it:</p>
-    <ul>
-      <li><strong>A U.S. citizen child who has turned 21</strong> can petition for a
-      parent. This is the single most commonly overlooked route among long-term TPS
-      holders.</li>
-      <li><strong>A spouse</strong> who is a citizen or permanent resident.</li>
-      <li><strong>Employment-based options</strong>, if an employer will sponsor.</li>
-      <li><strong>U or T visas</strong>, if you have been the victim of certain
-      crimes or of trafficking.</li>
-      <li><strong>Asylum</strong>, subject to deadline rules.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>A U.S. citizen child who has turned 21</dt>
+        <dd>Can petition for a parent. This is the single most commonly overlooked route among long-term TPS holders.</dd>
+      </div>
+      <div>
+        <dt>A spouse</dt>
+        <dd>Who is a citizen or permanent resident.</dd>
+      </div>
+      <div>
+        <dt>Employment-based options</dt>
+        <dd>If an employer will sponsor.</dd>
+      </div>
+      <div>
+        <dt>U or T visas</dt>
+        <dd>If you have been the victim of certain crimes or of trafficking.</dd>
+      </div>
+      <div>
+        <dt>Asylum</dt>
+        <dd>Subject to deadline rules.</dd>
+      </div>
+    </dl>
     <p>Getting a full screening from a nonprofit immigration program is genuinely
     worth the appointment. People routinely discover they have been eligible for
     something for years.</p>
@@ -798,13 +861,20 @@ window.G2A_ARTICLES = [
     <p>Fees required by the 2025 reconciliation legislation took effect for
     applications postmarked on or after <strong>July 22, 2025</strong>.</p>
     <h3>The new amounts</h3>
-    <ul>
-      <li><strong>Asylum application (Form I-589):</strong> $100 when you file, plus
-      <strong>$100 every year the application remains pending</strong>.</li>
-      <li><strong>Work permit (Form I-765)</strong> for asylum applicants, TPS
-      holders, and parolees: <strong>$550</strong>.</li>
-      <li><strong>Asylum work permit renewal or extension:</strong> $275.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Asylum application (Form I-589)</dt>
+        <dd>$100 when you file, plus <strong>$100 every year the application remains pending</strong>.</dd>
+      </div>
+      <div>
+        <dt>Work permit (Form I-765)</dt>
+        <dd>For asylum applicants, TPS holders, and parolees: <strong>$550</strong>.</dd>
+      </div>
+      <div>
+        <dt>Asylum work permit renewal or extension</dt>
+        <dd>$275.</dd>
+      </div>
+    </dl>
     <h3>These cannot be waived</h3>
     <p>This is the hardest part. The asylum fee and the asylum work permit fee
     <strong>cannot be waived or reduced</strong>, regardless of financial
@@ -880,18 +950,24 @@ window.G2A_ARTICLES = [
     applicant.</strong> The authority exists and is being used in certain cases, not
     as a universal step.</p>
     <h3>If it happens in your case</h3>
-    <ul>
-      <li><strong>Your own records are your protection.</strong> Leases, utility
-      bills, pay stubs, and tax filings that corroborate the addresses and employers
-      on your N-400 are what resolve questions.</li>
-      <li><strong>Make sure your application is accurate first.</strong> An
-      investigation is only a risk if what it finds differs from what you wrote.</li>
-      <li><strong>Nobody is obliged to speak to an investigator</strong>, including
-      your neighbours and your employer. They may decline.</li>
-      <li><strong>Verify identity.</strong> Officials carry credentials. This
-      authority is an obvious opening for impersonation scams &mdash; nobody
-      legitimate will demand payment or threaten you.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Your own records are your protection</dt>
+        <dd>Leases, utility bills, pay stubs, and tax filings that corroborate the addresses and employers on your N-400 are what resolve questions.</dd>
+      </div>
+      <div>
+        <dt>Make sure your application is accurate first</dt>
+        <dd>An investigation is only a risk if what it finds differs from what you wrote.</dd>
+      </div>
+      <div>
+        <dt>Nobody is obliged to speak to an investigator</dt>
+        <dd>Including your neighbours and your employer. They may decline.</dd>
+      </div>
+      <div>
+        <dt>Verify identity</dt>
+        <dd>Officials carry credentials. This authority is an obvious opening for impersonation scams &mdash; nobody legitimate will demand payment or threaten you.</dd>
+      </div>
+    </dl>
     <p>USCIS formally incorporated this into its Policy Manual in August 2026, which
     we covered separately.</p>`,
   sources: [
@@ -1031,17 +1107,24 @@ window.G2A_ARTICLES = [
     &mdash; not your interview date &mdash; decides your test. People are already
     studying the wrong list, so check before you spend months on it.</p>
     <h3>If you are taking the 2025 test</h3>
-    <ul>
-      <li><strong>Download the official 128-question list and answers</strong> from
-      USCIS. Do not study an unofficial list; the official answers are what count.</li>
-      <li><strong>Start earlier than you think you need to.</strong> Twelve correct
-      out of twenty is a higher bar than six out of ten, and there is more material.</li>
-      <li><strong>Learn out loud.</strong> It is a spoken test, and recognising an
-      answer on paper is not the same as producing it in a room.</li>
-      <li><strong>Check the answers that change</strong> near your interview: your
-      senators, your representative, the Speaker, the President and Vice President,
-      your governor and state capital.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Download the official 128-question list and answers</dt>
+        <dd>From USCIS. Do not study an unofficial list; the official answers are what count.</dd>
+      </div>
+      <div>
+        <dt>Start earlier than you think you need to</dt>
+        <dd>Twelve correct out of twenty is a higher bar than six out of ten, and there is more material.</dd>
+      </div>
+      <div>
+        <dt>Learn out loud</dt>
+        <dd>It is a spoken test, and recognising an answer on paper is not the same as producing it in a room.</dd>
+      </div>
+      <div>
+        <dt>Check the answers that change</dt>
+        <dd>Near your interview: your senators, your representative, the Speaker, the President and Vice President, your governor and state capital.</dd>
+      </div>
+    </dl>
     <h3>If you do not pass</h3>
     <p>You get a second attempt, normally rescheduled within 60 to 90 days, and you
     are retested only on the part you failed.</p>
@@ -1111,16 +1194,20 @@ window.G2A_ARTICLES = [
     <strong>reduced civics set</strong> &mdash; a smaller number of designated
     questions, in your own language.</p>
     <h3>How to use an exemption</h3>
-    <ul>
-      <li><strong>Count carefully.</strong> Both the age and the years as a permanent
-      resident are measured at the time of filing. Someone close to a threshold may
-      benefit from waiting a few months.</li>
-      <li><strong>Bring your own interpreter</strong>, who must be capable of
-      interpreting faithfully. USCIS does not supply one.</li>
-      <li><strong>Note what is not exempted:</strong> the civics knowledge itself, and
-      every other requirement &mdash; continuous residence, physical presence, good
-      moral character, the oath.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Count carefully</dt>
+        <dd>Both the age and the years as a permanent resident are measured at the time of filing. Someone close to a threshold may benefit from waiting a few months.</dd>
+      </div>
+      <div>
+        <dt>Bring your own interpreter</dt>
+        <dd>Who must be capable of interpreting faithfully. USCIS does not supply one.</dd>
+      </div>
+      <div>
+        <dt>Note what is not exempted</dt>
+        <dd>The civics knowledge itself, and every other requirement &mdash; continuous residence, physical presence, good moral character, the oath.</dd>
+      </div>
+    </dl>
     <p>If you are helping an older parent or grandparent apply, check these rules
     first. They change how you prepare entirely.</p>`,
   sources: [
@@ -1143,16 +1230,20 @@ window.G2A_ARTICLES = [
     or replaced by a different outcome. Treat it as breathing room, not as a
     resolution.</p>
     <h3>What to do with the time</h3>
-    <ul>
-      <li><strong>Keep re-registering</strong> whenever USCIS opens a registration
-      period. Court protection does not excuse you from the paperwork, and missing a
-      window is how people lose status they were entitled to keep.</li>
-      <li><strong>Use the pause to find a durable option.</strong> Get a full
-      screening from a nonprofit immigration program: family petitions, employment
-      routes, asylum, U or T visas, cancellation of removal.</li>
-      <li><strong>Keep your documents current</strong> &mdash; approval notices, EADs,
-      proof of continuous residence, tax filings.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Keep re-registering</dt>
+        <dd>Whenever USCIS opens a registration period. Court protection does not excuse you from the paperwork, and missing a window is how people lose status they were entitled to keep.</dd>
+      </div>
+      <div>
+        <dt>Use the pause to find a durable option</dt>
+        <dd>Get a full screening from a nonprofit immigration program: family petitions, employment routes, asylum, U or T visas, cancellation of removal.</dd>
+      </div>
+      <div>
+        <dt>Keep your documents current</dt>
+        <dd>Approval notices, EADs, proof of continuous residence, tax filings.</dd>
+      </div>
+    </dl>
     <h3>Verify before you act</h3>
     <p>TPS litigation moved in both directions through 2025 and 2026, and a Supreme
     Court decision in 2026 significantly limited judicial review of TPS terminations.
@@ -1175,18 +1266,20 @@ window.G2A_ARTICLES = [
     designations in the program's history. Beneficiaries include people who have lived
     in the United States for over three decades.</p>
     <h3>Immediate steps</h3>
-    <ul>
-      <li><strong>Find the official notice</strong> and note the exact dates. A
-      termination usually comes with a wind-down period during which status and work
-      authorization continue. Know your real last date rather than assuming the worst
-      or the best.</li>
-      <li><strong>Get screened for alternatives</strong> now, not later. After 30+
-      years, many people have options they have never examined &mdash; most commonly a
-      U.S. citizen child over 21 who can petition for a parent.</li>
-      <li><strong>Gather your history.</strong> Every TPS approval, every EAD, tax
-      returns, proof of residence. This documentation underpins almost every
-      alternative route.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Find the official notice</dt>
+        <dd>And note the exact dates. A termination usually comes with a wind-down period during which status and work authorization continue. Know your real last date rather than assuming the worst or the best.</dd>
+      </div>
+      <div>
+        <dt>Get screened for alternatives</dt>
+        <dd>Now, not later. After 30+ years, many people have options they have never examined &mdash; most commonly a U.S. citizen child over 21 who can petition for a parent.</dd>
+      </div>
+      <div>
+        <dt>Gather your history</dt>
+        <dd>Every TPS approval, every EAD, tax returns, proof of residence. This documentation underpins almost every alternative route.</dd>
+      </div>
+    </dl>
     <h3>On asylum</h3>
     <p>Asylum generally carries a one-year filing deadline from arrival, which is long
     past for most long-term TPS holders. There are exceptions, including
@@ -1216,18 +1309,24 @@ window.G2A_ARTICLES = [
     difficult position: approved, but not yet a citizen, and unable to get a passport,
     register to vote, or petition for relatives as a citizen.</p>
     <h3>If your ceremony was cancelled</h3>
-    <ul>
-      <li><strong>Keep every notice</strong>, including the cancelled appointment
-      notice. It is evidence of where your case stands.</li>
-      <li><strong>Do not let other documents lapse.</strong> If your green card or
-      work authorization expires while you wait, renew it. Approval of naturalization
-      is not a substitute for valid status documents.</li>
-      <li><strong>Contact your congressional representative's office.</strong> They do
-      immigration casework for constituents at no charge, and cancelled ceremonies are
-      exactly the kind of problem they take up &mdash; 26 members of Congress formally
-      questioned USCIS about these cancellations in October 2026.</li>
-      <li><strong>Watch your mail closely</strong> for a rescheduled notice.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Keep every notice</dt>
+        <dd>Including the cancelled appointment notice. It is evidence of where your case stands.</dd>
+      </div>
+      <div>
+        <dt>Do not let other documents lapse</dt>
+        <dd>If your green card or work authorization expires while you wait, renew it. Approval of naturalization is not a substitute for valid status documents.</dd>
+      </div>
+      <div>
+        <dt>Contact your congressional representative's office</dt>
+        <dd>They do immigration casework for constituents at no charge, and cancelled ceremonies are exactly the kind of problem they take up &mdash; 26 members of Congress formally questioned USCIS about these cancellations in October 2026.</dd>
+      </div>
+      <div>
+        <dt>Watch your mail closely</dt>
+        <dd>For a rescheduled notice.</dd>
+      </div>
+    </dl>
     <p>If you are in this position and want help understanding your notices or drafting
     an inquiry to your representative, <a href="inquiries.html">write to us</a>.</p>`,
   sources: [
@@ -1288,12 +1387,16 @@ window.G2A_ARTICLES = [
     certain I-140 categories.</p>
     <h3>What it does not do</h3>
     <p>Two misunderstandings cost people money:</p>
-    <ul>
-      <li><strong>It does not improve your chances.</strong> You are buying speed, not
-      favour. A weak petition gets denied faster.</li>
-      <li><strong>It is not available for the N-400.</strong> There is no way to pay
-      to expedite a naturalization application. If anyone offers to, it is a scam.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>It does not improve your chances</dt>
+        <dd>You are buying speed, not favour. A weak petition gets denied faster.</dd>
+      </div>
+      <div>
+        <dt>It is not available for the N-400</dt>
+        <dd>There is no way to pay to expedite a naturalization application. If anyone offers to, it is a scam.</dd>
+      </div>
+    </dl>
     <h3>Expedite requests are different, and free</h3>
     <p>Separately from premium processing, USCIS has an <strong>expedite request</strong>
     process that costs nothing. The criteria are narrow &mdash; severe financial loss
@@ -1328,17 +1431,24 @@ window.G2A_ARTICLES = [
     disadvantages entry-level roles and favours senior positions, which has real
     consequences for recent graduates on F-1 status using OPT.</p>
     <h3>If you are on F-1 and hoping for H-1B</h3>
-    <ul>
-      <li><strong>Know your OPT and STEM OPT timelines precisely.</strong> Your runway
-      determines how many lottery cycles you get.</li>
-      <li><strong>Ask where your offered wage sits</strong> relative to the prevailing
-      wage levels for your role and location. It now directly affects your odds.</li>
-      <li><strong>Consider cap-exempt employers.</strong> Universities, affiliated
-      nonprofit research organizations, and some nonprofit research institutions are
-      not subject to the cap &mdash; no lottery at all.</li>
-      <li><strong>Look at other categories:</strong> O-1 for extraordinary ability,
-      cap-exempt options, or country-specific routes such as TN, E-3, or H-1B1.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Know your OPT and STEM OPT timelines precisely</dt>
+        <dd>Your runway determines how many lottery cycles you get.</dd>
+      </div>
+      <div>
+        <dt>Ask where your offered wage sits</dt>
+        <dd>Relative to the prevailing wage levels for your role and location. It now directly affects your odds.</dd>
+      </div>
+      <div>
+        <dt>Consider cap-exempt employers</dt>
+        <dd>Universities, affiliated nonprofit research organizations, and some nonprofit research institutions are not subject to the cap &mdash; no lottery at all.</dd>
+      </div>
+      <div>
+        <dt>Look at other categories</dt>
+        <dd>O-1 for extraordinary ability, cap-exempt options, or country-specific routes such as TN, E-3, or H-1B1.</dd>
+      </div>
+    </dl>
     <p>Work with your school's international office and your employer's immigration
     counsel. Timing errors here are expensive and hard to undo.</p>`,
   sources: [
@@ -1359,12 +1469,16 @@ window.G2A_ARTICLES = [
     demand exceeds supply, a queue forms, and your place in it is your
     <strong>priority date</strong> &mdash; usually the date your petition was filed.</p>
     <p>The monthly bulletin publishes two sets of dates per category and country:</p>
-    <ul>
-      <li><strong>Final Action Dates</strong> &mdash; when a green card can actually
-      be approved for someone with that priority date.</li>
-      <li><strong>Dates for Filing</strong> &mdash; when you may submit your
-      application, ahead of approval.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Final Action Dates</dt>
+        <dd>When a green card can actually be approved for someone with that priority date.</dd>
+      </div>
+      <div>
+        <dt>Dates for Filing</dt>
+        <dd>When you may submit your application, ahead of approval.</dd>
+      </div>
+    </dl>
     <p>USCIS announces each month which chart applies for adjustment of status, so
     check that alongside the bulletin itself.</p>
     <h3>Reading your own row</h3>
@@ -1437,17 +1551,24 @@ window.G2A_ARTICLES = [
     the answer is usually that nothing is wrong with your case &mdash; it is in a
     queue you cannot see.</p>
     <h3>What you can do</h3>
-    <ul>
-      <li><strong>Keep your address current with USCIS.</strong> A missed notice can
-      mean a denial for abandonment. Update it directly with USCIS, not just with the
-      postal service.</li>
-      <li><strong>Respond to any request for evidence immediately</strong> and within
-      the deadline.</li>
-      <li><strong>Renew documents that expire while you wait</strong> &mdash; work
-      authorization, travel documents, green cards.</li>
-      <li><strong>Escalate if you are past the published processing time:</strong> a
-      service request, then the USCIS Ombudsman, then a congressional inquiry. All free.</li>
-    </ul>`,
+    <dl class="register">
+      <div>
+        <dt>Keep your address current with USCIS</dt>
+        <dd>A missed notice can mean a denial for abandonment. Update it directly with USCIS, not just with the postal service.</dd>
+      </div>
+      <div>
+        <dt>Respond to any request for evidence immediately</dt>
+        <dd>And within the deadline.</dd>
+      </div>
+      <div>
+        <dt>Renew documents that expire while you wait</dt>
+        <dd>Work authorization, travel documents, green cards.</dd>
+      </div>
+      <div>
+        <dt>Escalate if you are past the published processing time</dt>
+        <dd>A service request, then the USCIS Ombudsman, then a congressional inquiry. All free.</dd>
+      </div>
+    </dl>`,
   sources: [
     { label: 'USCIS — Update on Strengthened Screening and Vetting', url: 'https://www.uscis.gov/newsroom/alerts/update-on-uscis-strengthened-screening-and-vetting' },
     { label: 'USCIS — Check Case Processing Times', url: 'https://egov.uscis.gov/processing-times/' }
@@ -1571,7 +1692,7 @@ window.G2A_ARTICLES = [
       <li>Green card, front and back. Any prior work permits.</li>
       <li>Your <strong>A-number</strong>, and every USCIS receipt number you have ever
       had.</li>
-      <li><strong>Every notice USCIS has ever sent you</strong> &mdash; receipts,
+      <li>Every notice USCIS has ever sent you &mdash; receipts,
       approvals, denials, requests for evidence. Keep the originals, scan everything.</li>
       <li>Birth certificate, with a certified translation if it is not in English.</li>
       <li>Marriage certificates; divorce decrees or death certificates ending prior
@@ -1700,16 +1821,24 @@ window.G2A_ARTICLES = [
     <p>Practically: if TPS for your country is terminated, a lawsuit is much less likely
     to pause it. <strong>Do not plan on litigation buying you time.</strong></p>
     <h3>What to do if you hold TPS from any country</h3>
-    <ul>
-      <li><strong>Pursue a durable status now</strong>, while you have work
-      authorization and lawful presence. Do not wait for a termination announcement.</li>
-      <li><strong>Get a full screening</strong> from a nonprofit immigration program.
-      The most commonly missed option among long-term TPS holders is a U.S. citizen
-      child aged 21 or over petitioning for a parent.</li>
-      <li><strong>Keep re-registering</strong> in every registration window.</li>
-      <li><strong>Preserve your documentation</strong> &mdash; approvals, EADs, tax
-      returns, proof of continuous residence.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Pursue a durable status now</dt>
+        <dd>While you have work authorization and lawful presence. Do not wait for a termination announcement.</dd>
+      </div>
+      <div>
+        <dt>Get a full screening</dt>
+        <dd>From a nonprofit immigration program. The most commonly missed option among long-term TPS holders is a U.S. citizen child aged 21 or over petitioning for a parent.</dd>
+      </div>
+      <div>
+        <dt>Keep re-registering</dt>
+        <dd>In every registration window.</dd>
+      </div>
+      <div>
+        <dt>Preserve your documentation</dt>
+        <dd>Approvals, EADs, tax returns, proof of continuous residence.</dd>
+      </div>
+    </dl>
     <p>Advocates have turned toward Congress, since legislation is now the clearer route
     to permanent protection for long-term TPS holders.</p>`,
   sources: [
@@ -1817,19 +1946,24 @@ window.G2A_ARTICLES = [
     this process: <strong>make sure your application is accurate, and be able to prove
     it.</strong> An investigation only creates a problem if what it finds differs from
     what you wrote.</p>
-    <ul>
-      <li><strong>Corroborate your N-400.</strong> For each address and employer you
-      listed, be able to produce a lease, a utility bill, pay stubs, or a tax document
-      covering those dates.</li>
-      <li><strong>Fix discrepancies before the interview</strong>, not during it. If a
-      date is wrong, correct it yourself.</li>
-      <li><strong>Nobody has to talk to an investigator.</strong> Your neighbours,
-      landlord, and employer may decline. That is their right and it is not evidence
-      against you.</li>
-      <li><strong>Check credentials.</strong> Real officials carry them. No legitimate
-      officer will demand payment, threaten you, or ask for your password. This
-      authority is an obvious cover story for scams.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Corroborate your N-400</dt>
+        <dd>For each address and employer you listed, be able to produce a lease, a utility bill, pay stubs, or a tax document covering those dates.</dd>
+      </div>
+      <div>
+        <dt>Fix discrepancies before the interview</dt>
+        <dd>Not during it. If a date is wrong, correct it yourself.</dd>
+      </div>
+      <div>
+        <dt>Nobody has to talk to an investigator</dt>
+        <dd>Your neighbours, landlord, and employer may decline. That is their right and it is not evidence against you.</dd>
+      </div>
+      <div>
+        <dt>Check credentials</dt>
+        <dd>Real officials carry them. No legitimate officer will demand payment, threaten you, or ask for your password. This authority is an obvious cover story for scams.</dd>
+      </div>
+    </dl>
     <p>USCIS has indicated these investigations will not occur in every case. If one
     happens in yours and you are uncertain how to respond, that is the point to consult
     an immigration attorney.</p>`,
@@ -1859,18 +1993,24 @@ window.G2A_ARTICLES = [
     appear and risk detention, or skip it and get an automatic removal order. People
     stopped showing up to proceedings they were legally required to attend.</p>
     <h3>Know your rights at any courthouse appearance</h3>
-    <ul>
-      <li><strong>Always attend your hearing.</strong> Missing it generally produces an
-      in-absentia removal order, which is far worse than any risk of attending.</li>
-      <li><strong>You have the right to remain silent.</strong> You do not have to
-      answer questions about where you were born, your immigration status, or how you
-      entered.</li>
-      <li><strong>Do not sign anything</strong> without talking to a lawyer &mdash;
-      especially a document waiving your right to a hearing, such as a voluntary
-      departure or stipulated removal form.</li>
-      <li><strong>If detained:</strong> do not run, do not resist, do not lie. Stay
-      silent and ask for your attorney.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Always attend your hearing</dt>
+        <dd>Missing it generally produces an in-absentia removal order, which is far worse than any risk of attending.</dd>
+      </div>
+      <div>
+        <dt>You have the right to remain silent</dt>
+        <dd>You do not have to answer questions about where you were born, your immigration status, or how you entered.</dd>
+      </div>
+      <div>
+        <dt>Do not sign anything</dt>
+        <dd>Without talking to a lawyer &mdash; especially a document waiving your right to a hearing, such as a voluntary departure or stipulated removal form.</dd>
+      </div>
+      <div>
+        <dt>If detained</dt>
+        <dd>Do not run, do not resist, do not lie. Stay silent and ask for your attorney.</dd>
+      </div>
+    </dl>
     <h3>Preparing</h3>
     <p>Know your immigration history, your courthouse, and your judge. Appear remotely
     if that is permitted in your case. Bring the documents you need and leave the ones
@@ -2018,19 +2158,28 @@ window.G2A_ARTICLES = [
     millions of archived fingerprints to be resubmitted and temporarily stopped
     adjudications.</p>
     <h3>What to do while you wait</h3>
-    <ul>
-      <li><strong>Keep your address current with USCIS.</strong> The most common
-      self-inflicted disaster in a long wait is a missed notice leading to denial for
-      abandonment. Update it with USCIS directly.</li>
-      <li><strong>Renew anything that expires.</strong> A pending N-400 does not extend
-      your green card. If it expires while you wait, file the I-90.</li>
-      <li><strong>Keep studying.</strong> A twelve-month wait is long enough to forget
-      material you had learned.</li>
-      <li><strong>Check your case and the posted times</strong> for your field office,
-      which vary enormously.</li>
-      <li><strong>Escalate if you are beyond the posted time:</strong> a service
-      request, the USCIS Ombudsman, and a congressional inquiry. All free.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Keep your address current with USCIS</dt>
+        <dd>The most common self-inflicted disaster in a long wait is a missed notice leading to denial for abandonment. Update it with USCIS directly.</dd>
+      </div>
+      <div>
+        <dt>Renew anything that expires</dt>
+        <dd>A pending N-400 does not extend your green card. If it expires while you wait, file the I-90.</dd>
+      </div>
+      <div>
+        <dt>Keep studying</dt>
+        <dd>A twelve-month wait is long enough to forget material you had learned.</dd>
+      </div>
+      <div>
+        <dt>Check your case and the posted times</dt>
+        <dd>For your field office, which vary enormously.</dd>
+      </div>
+      <div>
+        <dt>Escalate if you are beyond the posted time</dt>
+        <dd>A service request, the USCIS Ombudsman, and a congressional inquiry. All free.</dd>
+      </div>
+    </dl>
     <p>If your case has gone quiet and you are unsure whether that is normal,
     <a href="inquiries.html">write to us</a> &mdash; we can help you read your notices
     and find the right escalation route.</p>`,
@@ -2059,20 +2208,28 @@ window.G2A_ARTICLES = [
     Allegiance. People had family travel for ceremonies that were cancelled the day
     before.</p>
     <h3>Practical steps</h3>
-    <ul>
-      <li><strong>Keep every notice</strong>, including the cancellation. It documents
-      where your case stands.</li>
-      <li><strong>Do not let status documents lapse.</strong> If your green card expires
-      while you wait for a ceremony, renew it. Approval is not a substitute for valid
-      documents.</li>
-      <li><strong>Contact your congressional representative's office.</strong> This is
-      precisely the casework they do, at no charge, and they were already engaged on
-      this issue.</li>
-      <li><strong>Watch your mail and your online case status closely</strong> for a
-      rescheduled date, and keep your address current.</li>
-      <li><strong>Be careful about travel.</strong> A rescheduled notice can arrive with
-      little warning, and missing a ceremony creates further delay.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Keep every notice</dt>
+        <dd>Including the cancellation. It documents where your case stands.</dd>
+      </div>
+      <div>
+        <dt>Do not let status documents lapse</dt>
+        <dd>If your green card expires while you wait for a ceremony, renew it. Approval is not a substitute for valid documents.</dd>
+      </div>
+      <div>
+        <dt>Contact your congressional representative's office</dt>
+        <dd>This is precisely the casework they do, at no charge, and they were already engaged on this issue.</dd>
+      </div>
+      <div>
+        <dt>Watch your mail and your online case status closely</dt>
+        <dd>For a rescheduled date, and keep your address current.</dd>
+      </div>
+      <div>
+        <dt>Be careful about travel</dt>
+        <dd>A rescheduled notice can arrive with little warning, and missing a ceremony creates further delay.</dd>
+      </div>
+    </dl>
     <p>If you are in this position and want help understanding your notices or writing
     to your representative, <a href="inquiries.html">send us an inquiry</a>. This is
     exactly the kind of thing we are here for.</p>`,
@@ -2095,27 +2252,51 @@ window.G2A_ARTICLES = [
     <h3>Why deadline counting matters so much</h3>
     <p>Immigration deadlines are generally unforgiving, and several carry consequences
     that are difficult or impossible to undo:</p>
-    <ul>
-      <li><strong>Responses to requests for evidence.</strong> Late means your case is
-      decided on the record as it stands &mdash; usually a denial.</li>
-      <li><strong>Appeals and motions</strong>, which have short windows.</li>
-      <li><strong>The asylum one-year filing deadline</strong> from arrival.</li>
-      <li><strong>The I-730 two-year deadline</strong> for follow-to-join relatives.</li>
-      <li><strong>TPS re-registration periods.</strong></li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Responses to requests for evidence</dt>
+        <dd>Late means your case is decided on the record as it stands &mdash; usually a denial.</dd>
+      </div>
+      <div>
+        <dt>Appeals and motions</dt>
+        <dd>Which have short windows.</dd>
+      </div>
+      <div>
+        <dt>The asylum one-year filing deadline</dt>
+        <dd>From arrival.</dd>
+      </div>
+      <div>
+        <dt>The I-730 two-year deadline</dt>
+        <dd>For follow-to-join relatives.</dd>
+      </div>
+      <div>
+        <dt>TPS re-registration periods</dt>
+        <dd></dd>
+      </div>
+    </dl>
     <h3>Practical rules that protect you</h3>
-    <ul>
-      <li><strong>Read the deadline on your own notice</strong> rather than relying on a
-      general rule. The notice governs.</li>
-      <li><strong>File early, not on the last day.</strong> Aim for a week ahead. This
-      single habit prevents most deadline disasters.</li>
-      <li><strong>Keep proof of filing</strong> &mdash; tracked, signed-for mail, or the
-      online confirmation and receipt number.</li>
-      <li><strong>Watch out for weekends and federal holidays</strong>, which is exactly
-      the ambiguity this guidance addresses.</li>
-      <li><strong>Do not wait for complete evidence</strong> if a deadline is near. File
-      what you have with an explanation rather than missing the date.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Read the deadline on your own notice</dt>
+        <dd>Rather than relying on a general rule. The notice governs.</dd>
+      </div>
+      <div>
+        <dt>File early, not on the last day</dt>
+        <dd>Aim for a week ahead. This single habit prevents most deadline disasters.</dd>
+      </div>
+      <div>
+        <dt>Keep proof of filing</dt>
+        <dd>Tracked, signed-for mail, or the online confirmation and receipt number.</dd>
+      </div>
+      <div>
+        <dt>Watch out for weekends and federal holidays</dt>
+        <dd>Which is exactly the ambiguity this guidance addresses.</dd>
+      </div>
+      <div>
+        <dt>Do not wait for complete evidence</dt>
+        <dd>If a deadline is near. File what you have with an explanation rather than missing the date.</dd>
+      </div>
+    </dl>
     <p>If you have a notice and are not certain when the deadline actually falls,
     <a href="inquiries.html">ask us</a> &mdash; we will help you read it. For a missed
     deadline, talk to an attorney promptly; some have remedies, but they are
@@ -2134,44 +2315,63 @@ window.G2A_ARTICLES = [
     <p>If you are at the beginning of this process, the last two years of news is a lot
     to absorb. Here is the short version.</p>
     <h3>What has become harder</h3>
-    <ul>
-      <li><strong>Waits are much longer.</strong> N-400 processing averaged 12.7 months
-      by August 2026, with a backlog over 813,000 and approvals down sharply.</li>
-      <li><strong>Scrutiny is broader.</strong> Expanded vetting, social media review,
-      revived neighborhood investigations, and a holistic good-moral-character
-      assessment.</li>
-      <li><strong>The civics test is longer</strong> for anyone filing on or after
-      October 20, 2025 &mdash; 20 questions from a pool of 128, with 12 correct to pass.</li>
-      <li><strong>Fees may rise steeply.</strong> A proposed rule would take the N-400 to
-      $1,330 and remove fee waivers. <strong>Not yet in effect.</strong></li>
-      <li><strong>TPS is far more precarious</strong>, and litigation is much less likely
-      to pause a termination.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Waits are much longer</dt>
+        <dd>N-400 processing averaged 12.7 months by August 2026, with a backlog over 813,000 and approvals down sharply.</dd>
+      </div>
+      <div>
+        <dt>Scrutiny is broader</dt>
+        <dd>Expanded vetting, social media review, revived neighborhood investigations, and a holistic good-moral-character assessment.</dd>
+      </div>
+      <div>
+        <dt>The civics test is longer</dt>
+        <dd>For anyone filing on or after October 20, 2025 &mdash; 20 questions from a pool of 128, with 12 correct to pass.</dd>
+      </div>
+      <div>
+        <dt>Fees may rise steeply</dt>
+        <dd>A proposed rule would take the N-400 to $1,330 and remove fee waivers. <strong>Not yet in effect.</strong>.</dd>
+      </div>
+      <div>
+        <dt>TPS is far more precarious</dt>
+        <dd>And litigation is much less likely to pause a termination.</dd>
+      </div>
+    </dl>
     <h3>What has not changed</h3>
-    <ul>
-      <li><strong>Birthright citizenship stands.</strong> The Supreme Court confirmed it
-      6&ndash;3 in June 2026.</li>
-      <li><strong>The eligibility rules are the same:</strong> five years as a permanent
-      resident (three if married to a citizen), continuous residence, physical presence,
-      good moral character, English and civics, the oath.</li>
-      <li><strong>The English standard is basic English</strong>, not fluency &mdash; and
-      age-based exemptions still exist.</li>
-      <li><strong>Current fees still apply</strong> until a final rule says otherwise,
-      including the $380 reduced fee and waivers.</li>
-      <li><strong>Honesty still protects you</strong> more than anything else.</li>
-    </ul>
+    <dl class="register">
+      <div>
+        <dt>Birthright citizenship stands</dt>
+        <dd>The Supreme Court confirmed it 6&ndash;3 in June 2026.</dd>
+      </div>
+      <div>
+        <dt>The eligibility rules are the same</dt>
+        <dd>Five years as a permanent resident (three if married to a citizen), continuous residence, physical presence, good moral character, English and civics, the oath.</dd>
+      </div>
+      <div>
+        <dt>The English standard is basic English</dt>
+        <dd>Not fluency &mdash; and age-based exemptions still exist.</dd>
+      </div>
+      <div>
+        <dt>Current fees still apply</dt>
+        <dd>Until a final rule says otherwise, including the $380 reduced fee and waivers.</dd>
+      </div>
+      <div>
+        <dt>Honesty still protects you</dt>
+        <dd>More than anything else.</dd>
+      </div>
+    </dl>
     <h3>What to do first</h3>
     <ol>
-      <li><strong>Confirm you are eligible</strong> &mdash; count your years, your trips,
+      <li>Confirm you are eligible &mdash; count your years, your trips,
       your physical presence.</li>
-      <li><strong>Build your document file</strong> before you fill in anything.</li>
-      <li><strong>Check fees and the current form edition</strong> on uscis.gov the week
+      <li>Build your document file before you fill in anything.</li>
+      <li>Check fees and the current form edition on uscis.gov the week
       you file, and apply for a reduced fee or waiver if you qualify.</li>
-      <li><strong>File online if you can</strong> &mdash; it is cheaper and easier to
+      <li>File online if you can &mdash; it is cheaper and easier to
       track.</li>
-      <li><strong>Start studying</strong> the right version of the test for your filing
+      <li>Start studying the right version of the test for your filing
       date.</li>
-      <li><strong>Get a real attorney</strong> if anything in your history is
+      <li>Get a real attorney if anything in your history is
       complicated.</li>
     </ol>
     <p>And if you are not sure where you fit in any of this,
