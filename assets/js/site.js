@@ -7,8 +7,16 @@
   'use strict';
 
   const PREFERS_REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Prerendered posts live in /articles/, one level down. They declare the
+     prefix on <body data-root="../"> so the shared nav, footer, and article
+     links resolve from either depth without absolute URLs. */
+  const ROOT = (document.body && document.body.getAttribute('data-root')) || '';
+  const url = (path) => ROOT + path;
+  const articleUrl = (slug) => ROOT + 'articles/' + encodeURIComponent(slug) + '.html';
   const COUNTER_DURATION_MS = 1400;
   const INQUIRY_EMAIL = 'gateway2america.primary@gmail.com';
+  const SITE_ORIGIN = 'https://gateway2america.vercel.app';
 
   /* ======================================================================
      Utilities
@@ -73,11 +81,11 @@
     if (navHost) {
       navHost.className = 'nav';
       navHost.innerHTML = '<div class="wrap nav__inner">'
-        + '<a class="brand" href="index.html">' + BRAND_MARK + 'Gateway2America</a>'
+        + '<a class="brand" href="' + url('index.html') + '">' + BRAND_MARK + 'Gateway2America</a>'
         + '<nav aria-label="Main"><ul class="nav__links" data-nav-links>'
-        + NAV_LINKS.map((l) => '<li><a href="' + l.href + '">' + l.label + '</a></li>').join('')
+        + NAV_LINKS.map((l) => '<li><a href="' + url(l.href) + '">' + l.label + '</a></li>').join('')
         + '</ul></nav>'
-        + '<a class="btn btn--primary nav__cta" href="inquiries.html">Ask a question</a>'
+        + '<a class="btn btn--primary nav__cta" href="' + url('inquiries.html') + '">Ask a question</a>'
         + '<button class="nav__toggle" data-nav-toggle aria-expanded="false" aria-label="Open menu">'
         + '<span></span></button>'
         + '</div>';
@@ -89,11 +97,11 @@
     footHost.innerHTML = '<div class="wrap">'
       + '<div class="footer__grid">'
       + '<div class="footer__about">'
-      + '<a class="brand" href="index.html" style="margin-bottom:var(--s-4)">' + BRAND_MARK + 'Gateway2America</a>'
+      + '<a class="brand" href="' + url('index.html') + '" style="margin-bottom:var(--s-4)">' + BRAND_MARK + 'Gateway2America</a>'
       + '<p>A free, volunteer-run service helping people understand the path to '
       + 'U.S. citizenship. Based in Pennsylvania, answering questions from anywhere.</p></div>'
       + '<div><h4>Sections</h4><ul>'
-      + NAV_LINKS.slice(0, 5).map((l) => '<li><a href="' + l.href + '">' + l.label + '</a></li>').join('')
+      + NAV_LINKS.slice(0, 5).map((l) => '<li><a href="' + url(l.href) + '">' + l.label + '</a></li>').join('')
       + '</ul></div>'
       + '<div><h4>Official sources</h4><ul>'
       + '<li><a href="https://www.uscis.gov" target="_blank" rel="noopener noreferrer">USCIS.gov</a></li>'
@@ -102,10 +110,10 @@
       + '<li><a href="https://www.uscis.gov/citizenship/find-study-materials-and-resources" target="_blank" rel="noopener noreferrer">Study materials</a></li>'
       + '</ul></div>'
       + '<div><h4>Legal</h4><ul>'
-      + '<li><a href="terms.html">Terms of use</a></li>'
-      + '<li><a href="terms.html#privacy">Privacy</a></li>'
-      + '<li><a href="terms.html#cookies">Cookies</a></li>'
-      + '<li><a href="terms.html#conduct">Code of conduct</a></li>'
+      + '<li><a href="' + url('terms.html') + '">Terms of use</a></li>'
+      + '<li><a href="' + url('terms.html') + '#privacy">Privacy</a></li>'
+      + '<li><a href="' + url('terms.html') + '#cookies">Cookies</a></li>'
+      + '<li><a href="' + url('terms.html') + '#conduct">Code of conduct</a></li>'
       + '</ul></div></div>'
       + '<p class="footer__disclaimer"><strong>Not legal advice.</strong> Gateway2America is '
       + 'not a law firm and no one here is an attorney or an accredited representative. We '
@@ -113,7 +121,7 @@
       + 'resources, and post updates. We cannot advise you on your individual case, '
       + 'represent you, or predict its outcome. For advice about your situation, consult a '
       + 'licensed immigration attorney or a DOJ-accredited representative &mdash; '
-      + '<a href="redirection.html#legal-help">free and low-cost options are listed here</a>.</p>'
+      + '<a href="' + url('redirection.html') + '#legal-help">free and low-cost options are listed here</a>.</p>'
       + '<div class="footer__bottom">'
       + '<span>&copy; 2026 Gateway2America. Serving since October 2024.</span>'
       + '<span>Recipient of a Certificate of Special Congressional Recognition, PA-06</span>'
@@ -305,7 +313,7 @@
 
   function articleCardHtml(article) {
     const { year, monthIndex, day } = parseIsoDate(article.date);
-    return '<a class="article-card" href="article.html?a=' + encodeURIComponent(article.slug) + '">'
+    return '<a class="article-card" href="' + articleUrl(article.slug) + '">'
       + '<div class="article-card__date"><b>' + MONTHS_SHORT[monthIndex] + ' ' + day + '</b>' + year + '</div>'
       + '<div><h3>' + escapeHtml(article.title) + '</h3>'
       + '<p>' + escapeHtml(article.summary) + '</p>'
@@ -361,6 +369,8 @@
   function initArticleDetail() {
     const host = $('#article-detail');
     if (!host || !window.G2A_ARTICLES) return;
+    // Prerendered by tools/build-seo.mjs; the markup is already correct.
+    if (host.hasAttribute('data-prerendered')) return;
 
     const slug = new URLSearchParams(window.location.search).get('a');
     const sorted = sortedArticles();
@@ -380,6 +390,14 @@
     document.title = article.title + ' — Gateway2America';
     const metaDesc = $('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute('content', article.summary);
+    // This URL is the legacy form. Point indexers at the prerendered page.
+    let canonical = $('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', SITE_ORIGIN + '/articles/' + article.slug + '.html');
 
     let sourcesHtml = '';
     if (article.sources && article.sources.length) {
@@ -395,8 +413,8 @@
     let pagerHtml = '';
     if (newer || older) {
       pagerHtml = '<nav class="pager">'
-        + (older ? '<a href="article.html?a=' + encodeURIComponent(older.slug) + '"><span>Older</span>' + escapeHtml(older.title) + '</a>' : '<span></span>')
-        + (newer ? '<a href="article.html?a=' + encodeURIComponent(newer.slug) + '" style="text-align:right"><span>Newer</span>' + escapeHtml(newer.title) + '</a>' : '<span></span>')
+        + (older ? '<a href="' + articleUrl(older.slug) + '"><span>Older</span>' + escapeHtml(older.title) + '</a>' : '<span></span>')
+        + (newer ? '<a href="' + articleUrl(newer.slug) + '" style="text-align:right"><span>Newer</span>' + escapeHtml(newer.title) + '</a>' : '<span></span>')
         + '</nav>';
     }
 

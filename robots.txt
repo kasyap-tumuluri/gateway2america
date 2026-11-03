@@ -1,0 +1,8 @@
+# Gateway2America — everything here is free to read and free to index.
+User-agent: *
+Allow: /
+
+# The legacy client-rendered shell. Real posts live at /articles/<slug>.html
+Disallow: /article.html
+
+Sitemap: https://gateway2america.vercel.app/sitemap.xml

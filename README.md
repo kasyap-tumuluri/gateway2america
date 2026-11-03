@@ -54,6 +54,43 @@ The plain `.card` is still defined and still used twice — the terms-page conte
 the inquiry form shell. Please don't go back to grids of them; emphasis on this site is
 meant to be carried by depth and colour rather than by boxes and italic type.
 
+## SEO
+
+All of it is plain static files, so it costs nothing and needs no framework.
+
+**Every article has a real page.** The 59 posts used to exist only inside
+JavaScript at `article.html?a=<slug>`, which gave crawlers one URL with no content
+in the HTML. `tools/build-seo.mjs` now writes `articles/<slug>.html` for each one,
+with the body baked into the markup and its own title, description, canonical URL,
+social card, and `Article` JSON-LD including the cited sources.
+
+**Re-run the generator whenever you touch `articles-data.js`:**
+
+```bash
+node tools/build-seo.mjs
+```
+
+It rewrites all 59 pages plus `sitemap.xml`, deletes pages whose slug no longer
+exists, and refuses to run at all if a slug is malformed, duplicated, or a date is
+not `YYYY-MM-DD`. Commit what it produces. Nothing runs at request time, so the
+deployed site still has no build step.
+
+| File | What it does |
+|---|---|
+| `robots.txt` | Allows everything, points to the sitemap, hides the legacy shell |
+| `sitemap.xml` | Generated — 7 pages + 59 posts, each with its date |
+| `vercel.json` | 301s old `?a=` links to the real page, caching, security headers |
+| `og/card.html` | Source for the social image; the comment inside shows the render command |
+| `og/gateway2america.png` | 1200×630 card used by every page |
+
+**URLs keep the `.html` extension** everywhere, deliberately. Vercel's `cleanUrls`
+would strip it and then redirect every canonical, which costs a hop for no gain.
+If you ever turn it on, update the canonicals in `tools/build-seo.mjs` to match.
+
+**Before launch**, verify in [Google Search Console](https://search.google.com/search-console)
+and submit `https://gateway2america.vercel.app/sitemap.xml`. That is the only step
+that needs a human.
+
 ## Add an article
 
 Open `assets/js/articles-data.js` and copy any existing entry. Order does not matter —
@@ -76,6 +113,9 @@ the site sorts by date.
 
 **Please keep citing sources.** Every policy post links its original notice. That is
 what separates this from guesswork, and readers rely on it.
+
+Then run `node tools/build-seo.mjs` so the post gets a real page and lands in the
+sitemap. Skipping it means the post exists on the site but is invisible to search.
 
 ## Edit the nav or footer
 
