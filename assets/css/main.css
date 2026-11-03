@@ -628,58 +628,78 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
 }
 
 /* ==========================================================================
-   6c. Tally — the figures, set in running prose
+   6c. Ledger — the figures as a kept record
 
-   A four-across strip of big numbers reads as a metrics dashboard. These
-   are the same figures carried inside sentences instead.
+   Not a four-across strip of big numbers, and not numerals jammed into
+   running prose. A figure column set against its description across
+   hairlines, the way a printed record reads down the page.
    ========================================================================== */
 
-.tally {
-  font-size: var(--fs-md);
-  line-height: 1.95;
-  max-width: 58ch;
-  color: var(--ink-soft);
+.ledger-block {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: var(--s-6) var(--s-8);
+  align-items: start;
 }
-.tally__fig {
+
+.ledger { margin: 0; }
+.ledger__row {
+  display: grid;
+  grid-template-columns: minmax(5.5rem, 7.5rem) minmax(0, 1fr);
+  gap: var(--s-2) var(--s-5);
+  align-items: baseline;
+  padding: var(--s-4) 0;
+  border-top: 1px solid var(--ink-line);
+}
+.ledger__row:last-child { border-bottom: 1px solid var(--ink-line); }
+
+.ledger__fig {
   font-family: var(--font-display);
-  font-size: 2.1em;
+  font-size: clamp(2.1rem, 3.6vw, 3rem);
   font-weight: 500;
-  line-height: 0.8;
-  letter-spacing: -0.03em;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
   color: var(--gold-bright);
   font-variant-numeric: tabular-nums;
-  padding-inline: 0.06em;
+  text-align: right;
+  white-space: nowrap;
 }
-.tally__caveat {
-  margin-top: var(--s-5);
+.ledger__fig .unit {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-top: 0.35rem;
+}
+.ledger__what {
   font-size: var(--fs-sm);
-  color: var(--slate-soft);
-  max-width: 54ch;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 34ch;
 }
-.section--ink .tally__caveat { color: var(--ink-soft); opacity: 0.8; }
 
-/* Prose lists read as hairline rows rather than a column of bullet glyphs.
-   Applies to article bodies and the terms page. */
-.prose ul:not(.register):not(.stack3d) {
-  list-style: none;
-  padding: 0;
-  margin: var(--s-5) 0;
-}
-.prose ul:not(.register):not(.stack3d) > li {
-  margin: 0;
-  padding: var(--s-3) 0;
-  border-top: 1px solid var(--border);
+.ledger__note {
+  font-size: var(--fs-sm);
   line-height: 1.65;
+  color: var(--ink-soft);
+  opacity: 0.75;
+  max-width: 42ch;
+  padding-top: var(--s-4);
+  border-top: 1px solid var(--ink-line);
+  margin-top: var(--s-5);
 }
-.prose ul:not(.register):not(.stack3d) > li:last-child {
-  border-bottom: 1px solid var(--border);
+
+@media (max-width: 860px) {
+  .ledger-block { grid-template-columns: 1fr; }
 }
-.section--ink .prose ul:not(.register):not(.stack3d) > li,
-.section--ink .prose ul:not(.register):not(.stack3d) > li:last-child {
-  border-color: var(--ink-line);
+@media (max-width: 460px) {
+  .ledger__row { grid-template-columns: 1fr; gap: var(--s-1) 0; }
+  .ledger__fig { text-align: left; }
+  .ledger__fig .unit { display: inline; margin-left: 0.4rem; }
 }
-/* The contents nav and source list keep their own compact treatment. */
-.card .prose ul > li, .sources li { border: 0; padding: 0; }
 
 /* ==========================================================================
    7. Cards
