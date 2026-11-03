@@ -1,5 +1,9 @@
 # Gateway2America — website
 
+> **Picking this up cold? Read [HANDOFF.md](HANDOFF.md) first.** It has the current
+> state, the open to-do list, and the rules that are not style preferences. This
+> file is the maintenance manual.
+
 A static site. No build step, no Node, no npm. Open `index.html` in a browser and it
 works.
 
