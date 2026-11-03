@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Send an Inquiry — Gateway2America</title>
+<meta name="description" content="Ask us a question about the U.S. citizenship process, or request free citizenship test tutoring. We never ask for your name or date of birth, and we keep nothing.">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<header data-site-nav></header>
+
+<main id="main">
+
+  <section class="hero" style="padding-block:clamp(7rem,13vw,9.5rem) clamp(3rem,6vw,5rem)">
+    <div class="hero__light" aria-hidden="true"></div>
+    <div class="hero__grain" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <span class="eyebrow">Inquiries</span>
+      <h1 style="font-size:var(--fs-2xl)">Ask us anything about the process</h1>
+      <p class="hero__lede">
+        It's free, it's in plain language, and you'll usually hear back within
+        24&ndash;48 hours. You really don't need the right words or a form number to
+        write to us, so just describe your situation however makes sense to you.
+      </p>
+      <p class="hero__promise">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>
+        </svg>
+        <span>
+          <strong>We never ask for your name or date of birth.</strong> The form just
+          builds a draft in your own email program, so nothing gets submitted to this
+          website or stored on it anywhere. Your message then goes in the bin within 7
+          days of us helping you.
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ What we can and cannot do ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="text-center" style="max-width:60ch;margin-inline:auto;margin-bottom:var(--s-8)" data-reveal>
+        <span class="eyebrow">Before you write</span>
+        <h2>What we can help with &mdash; and what we can't</h2>
+        <p class="lede" style="margin-top:var(--s-4)">
+          Being upfront about this saves you time, mostly. If your question lands on the
+          right-hand side, we'll say so honestly and point you toward somebody who can
+          actually help with it.
+        </p>
+      </div>
+
+      <div class="screen3d" style="gap:var(--s-6)">
+        <div class="panel3d panel3d--yes" data-reveal>
+          <span class="panel3d__num">YES</span>
+          <h3>Inquiries we accept</h3>
+          <ul>
+            <li><strong>How the process works.</strong> "What's the difference between
+            the three-year and five-year route?" "What actually happens at the interview?"</li>
+            <li><strong>Which form you need.</strong> "I have to renew my green card
+            &mdash; which one is that again?"</li>
+            <li><strong>Reading a notice you got in the post.</strong> Tell us what it
+            says and we'll help you work out what it's asking for.</li>
+            <li><strong>Citizenship test tutoring.</strong> Free practice for the civics
+            and English parts. Mention your filing date so we use the right question list.</li>
+            <li><strong>Where to find real legal help.</strong> Free and low-cost
+            options, plus how to spot the scams.</li>
+            <li><strong>Whether a delay is normal</strong>, and what free escalation
+            routes you have if it isn't.</li>
+            <li><strong>What a policy change actually means</strong> for ordinary people.</li>
+            <li><strong>"I don't know where to start."</strong> Genuinely our most common
+            message, and a perfectly fine place to begin.</li>
+          </ul>
+        </div>
+
+        <div class="panel3d panel3d--no" data-reveal data-reveal-delay="100">
+          <span class="panel3d__num">NO</span>
+          <h3>What we cannot do</h3>
+          <ul>
+            <li><strong>Give legal advice.</strong> None of us are attorneys or
+            accredited representatives, so we can't tell you what to do in your own
+            particular case.</li>
+            <li><strong>Represent you</strong> before USCIS, a consulate, or a court.</li>
+            <li><strong>Fill out or sign your forms</strong>, or file anything for you.</li>
+            <li><strong>Assess your eligibility</strong>, or guess whether your case is
+            likely to be approved.</li>
+            <li><strong>Advise on anything complicated</strong> &mdash; a criminal
+            record, a prior removal order, time out of status, a denial, a
+            misrepresentation concern. Those really do need a lawyer, because the stakes
+            are too high for anything less.</li>
+            <li><strong>Handle emergencies.</strong> If you or someone in your family has
+            been detained, please contact an immigration attorney straight away rather
+            than writing to us.</li>
+            <li><strong>Expedite anything.</strong> Nobody can, so anyone telling you
+            otherwise is trying to defraud you.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ The form ============ -->
+  <section class="section section--sunk">
+    <div class="wrap wrap--narrow">
+      <div style="margin-bottom:var(--s-6)" data-reveal>
+        <span class="eyebrow">Your inquiry</span>
+        <h2>Three questions, that's all</h2>
+        <p class="lede" style="margin-top:var(--s-4)">
+          We only ask for what we genuinely need to give you a useful answer. Knowing
+          roughly where you're writing from tells us which rules and local resources
+          apply, and your current citizenship tells us which pathways are even open to
+          you in the first place.
+        </p>
+      </div>
+
+      <div class="card" data-reveal>
+        <form class="form" id="inquiry-form" novalidate>
+
+          <div class="field">
+            <label for="topic">What is this about?</label>
+            <select id="topic" name="topic">
+              <option>A general question about the process</option>
+              <option>Which pathway applies to me</option>
+              <option>Help understanding a notice I received</option>
+              <option>Citizenship test tutoring</option>
+              <option>Which form do I need</option>
+              <option>My case seems delayed</option>
+              <option>Finding free or low-cost legal help</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="origin">Where are you writing from?</label>
+            <p class="field__hint">
+              A state, or a country if you are outside the U.S. A city is fine too.
+              We do not need your street address.
+            </p>
+            <input type="text" id="origin" name="origin" autocomplete="off"
+                   placeholder="For example: Chester County, Pennsylvania">
+            <p class="field__error" id="error-origin" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="citizenship">What citizenship do you currently hold?</label>
+            <p class="field__hint">
+              The country of your passport. If you are stateless, or hold more than
+              one, just say so.
+            </p>
+            <input type="text" id="citizenship" name="citizenship" autocomplete="off"
+                   placeholder="For example: India">
+            <p class="field__error" id="error-citizenship" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="inquiry">What is your inquiry?</label>
+            <p class="field__hint">
+              In your own words, in any language you are comfortable writing. Tell us
+              what you are trying to do and where you are stuck.
+            </p>
+            <textarea id="inquiry" name="inquiry"
+                      placeholder="For example: I have had my green card since 2019 and I want to apply for citizenship, but I spent eight months abroad in 2022 caring for my mother. I don't know if that affects me."></textarea>
+            <p class="field__error" id="error-inquiry" aria-live="polite"></p>
+          </div>
+
+          <div class="form__note">
+            <strong>Please don't send us:</strong> your full name, date of birth,
+            A-number, Social Security number, passport number, or any kind of password.
+            We don't need any of it, and honestly we'd rather not have it. If the notice
+            you're asking about has those details printed on it, cover them up before you
+            describe it to us.
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">
+            Open this in my email app
+          </button>
+
+          <p class="form__status" id="inquiry-status" aria-live="polite">
+            Pressing the button opens your own email program with your answers filled in.
+            You can read it over, change anything, and then send it yourself. Nothing is
+            transmitted until you press send in your own email app.
+          </p>
+
+        </form>
+      </div>
+
+      <p style="margin-top:var(--s-5);font-size:var(--fs-sm);color:var(--slate-soft)" data-reveal>
+        Prefer to write directly? Email
+        <a href="mailto:gateway2america.primary@gmail.com">gateway2america.primary@gmail.com</a>.
+        If your email app does not open, that address is always the fallback.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ What happens next ============ -->
+  <section class="section">
+    <div class="wrap wrap--narrow">
+      <div style="margin-bottom:var(--s-6)" data-reveal>
+        <span class="eyebrow">After you send it</span>
+        <h2>What happens next</h2>
+      </div>
+      <div data-reveal>
+        <article class="pathway">
+          <div class="pathway__marker"><div class="pathway__dot">1</div><div class="pathway__line"></div></div>
+          <div class="pathway__body">
+            <h3>We read it, usually the same day</h3>
+            <p>A real person reads every single inquiry that comes in &mdash; there's no
+            ticketing system here and no automated reply waiting to greet you.</p>
+          </div>
+        </article>
+        <article class="pathway">
+          <div class="pathway__marker"><div class="pathway__dot">2</div><div class="pathway__line"></div></div>
+          <div class="pathway__body">
+            <h3>You hear back within 24&ndash;48 hours</h3>
+            <p>Written in plain language, with links to the official source so you can
+            check everything we've told you. And if your question turns out to need a
+            lawyer, we'll just say so clearly rather than guessing at it.</p>
+          </div>
+        </article>
+        <article class="pathway">
+          <div class="pathway__marker"><div class="pathway__dot">3</div><div class="pathway__line"></div></div>
+          <div class="pathway__body">
+            <h3>Ask follow-up questions freely</h3>
+            <p>One answer hardly ever wraps up the whole conversation, which is
+            completely fine by us. There's no limit on follow-ups and no charge either.</p>
+          </div>
+        </article>
+        <article class="pathway">
+          <div class="pathway__marker"><div class="pathway__dot">4</div></div>
+          <div class="pathway__body">
+            <h3>Then we delete it</h3>
+            <p>Within seven days of helping you, your message gets deleted out of our
+            inbox, and we keep no record anywhere of who asked what.
+            <a href="terms.html#privacy">Read the full privacy terms &rarr;</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer data-site-footer></footer>
+
+<script src="assets/js/articles-data.js"></script>
+<script defer src="assets/js/site.js"></script>
+<script defer src="assets/js/assistant.js"></script>
+</body>
+</html>

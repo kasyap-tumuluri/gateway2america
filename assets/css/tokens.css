@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Gateway2America — Design tokens
+   Direction: "Threshold" — an arch of warm light against deep ink navy.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Public+Sans:ital,wght@0,300..800;1,300..700&display=swap');
+
+:root {
+  /* ---- Core palette ---------------------------------------------------- */
+  --ink:          #0B1725;  /* deep navy — primary dark surface */
+  --ink-raised:   #132637;  /* lifted dark surface */
+  --ink-line:     #1E3449;  /* hairline on dark */
+  --ink-soft:     #8FA7BC;  /* muted text on dark */
+
+  --gold:         #E0A341;  /* the light through the gateway */
+  --gold-bright:  #F2C87E;
+  --gold-deep:    #B57C22;
+
+  --paper:        #FAF6EF;  /* warm reading surface */
+  --paper-raised: #FFFFFF;
+  --paper-sunk:   #F1E9DB;
+  --paper-line:   #E2D7C4;
+
+  --slate:        #4A5B6B;  /* body text on paper */
+  --slate-soft:   #6E7F8E;  /* secondary text on paper */
+  --sage:         #5E8471;  /* success / reassurance accent */
+  --clay:         #A6553C;  /* caution accent */
+
+  /* ---- Semantic ------------------------------------------------------- */
+  --bg:            var(--paper);
+  --text:          var(--slate);
+  --text-strong:   var(--ink);
+  --accent:        var(--gold-deep);
+  --surface:       var(--paper-raised);
+  --border:        var(--paper-line);
+
+  /* ---- Type ----------------------------------------------------------- */
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-body:    'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Fluid type scale */
+  --fs-xs:   0.8125rem;
+  --fs-sm:   0.9375rem;
+  --fs-base: 1.0625rem;
+  --fs-md:   clamp(1.125rem, 0.4vw + 1.03rem, 1.3125rem);
+  --fs-lg:   clamp(1.375rem, 1vw + 1.1rem, 1.75rem);
+  --fs-xl:   clamp(1.75rem, 2vw + 1.3rem, 2.5rem);
+  --fs-2xl:  clamp(2.125rem, 3.4vw + 1.35rem, 3.5rem);
+  --fs-3xl:  clamp(2.5rem, 5.6vw + 1.3rem, 5rem);
+
+  --lh-tight: 1.08;
+  --lh-snug:  1.28;
+  --lh-body:  1.68;
+
+  /* ---- Space ---------------------------------------------------------- */
+  --s-1:  0.25rem;
+  --s-2:  0.5rem;
+  --s-3:  0.75rem;
+  --s-4:  1rem;
+  --s-5:  1.5rem;
+  --s-6:  2rem;
+  --s-7:  3rem;
+  --s-8:  4rem;
+  --s-9:  6rem;
+  --s-10: 8rem;
+
+  /* Section rhythm scales with viewport */
+  --section-y: clamp(3.5rem, 7vw, 7rem);
+
+  /* ---- Structure ------------------------------------------------------ */
+  --measure:      68ch;   /* comfortable reading width */
+  --page-max:     1180px;
+  --page-wide:    1380px;
+  --gutter:       clamp(1.125rem, 4vw, 2.5rem);
+
+  --radius-sm: 4px;
+  --radius:    8px;
+  --radius-lg: 16px;
+
+  /* ---- Depth ---------------------------------------------------------- */
+  --shadow-sm: 0 1px 2px rgba(11, 23, 37, 0.06),
+               0 2px 6px rgba(11, 23, 37, 0.04);
+  --shadow:    0 2px 4px rgba(11, 23, 37, 0.05),
+               0 8px 24px rgba(11, 23, 37, 0.07);
+  --shadow-lg: 0 4px 8px rgba(11, 23, 37, 0.06),
+               0 18px 48px rgba(11, 23, 37, 0.12);
+  --glow-gold: 0 0 60px rgba(224, 163, 65, 0.22);
+
+  /* ---- Motion --------------------------------------------------------- */
+  --ease-out:  cubic-bezier(0.22, 0.68, 0.24, 1);
+  --ease-soft: cubic-bezier(0.4, 0.14, 0.3, 1);
+  --t-fast:    160ms;
+  --t-base:    280ms;
+  --t-slow:    560ms;
+
+  --z-nav:       100;
+  --z-assistant: 200;
+  --z-modal:     300;
+}
+
+/* Respect the reader's wishes: no decorative motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
