@@ -367,6 +367,168 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
 .hero__promise strong { color: var(--paper); }
 
 /* ==========================================================================
+   5b. Landing hero — the corridor
+   An endless run of arches travelling toward the viewer, lit from the far
+   end. Rings are real 3D layers, so pointer parallax shifts them against
+   each other and the depth is genuine rather than painted on.
+   ========================================================================== */
+
+.hero--landing { padding-block: clamp(6rem, 11vw, 9rem) clamp(4rem, 7vw, 6rem); }
+
+.hero--landing .hero__inner {
+  max-width: none;
+  margin-inline: 0;
+  text-align: left;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: var(--s-7);
+  align-items: center;
+}
+.hero--landing h1 { text-wrap: pretty; }
+.hero--landing .hero__lede { margin-inline: 0; }
+.hero--landing .hero__badges { justify-content: flex-start; }
+.hero--landing .hero__actions { justify-content: flex-start; align-items: center; }
+/* The promise sits in front of the corridor, so it needs its own ground. */
+.hero--landing .hero__promise {
+  margin-top: 0;
+  max-width: none;
+  display: flex;
+  background: rgba(11, 23, 37, 0.62);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-color: rgba(224, 163, 65, 0.3);
+  box-shadow: 0 22px 50px -30px rgba(0, 0, 0, 0.85);
+}
+
+/* A single line of credentials reads less like a badge rack. */
+.hero__creds {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: var(--s-2) var(--s-4);
+  margin-bottom: var(--s-5);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.hero__creds span { display: inline-flex; align-items: center; gap: 0.45rem; }
+.hero__creds span::before {
+  content: ""; width: 5px; height: 5px; border-radius: 50%;
+  background: var(--gold); flex-shrink: 0;
+}
+
+/* A quiet text link next to the primary button, rather than a second button. */
+.link-quiet {
+  color: var(--ink-soft); font-size: var(--fs-sm); font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(250, 246, 239, 0.28);
+  padding-bottom: 1px;
+  transition: color var(--t-fast) var(--ease-out), border-color var(--t-fast) var(--ease-out);
+}
+.link-quiet:hover { color: var(--gold-bright); border-color: var(--gold); }
+
+/* ---- The corridor ---- */
+.corridor {
+  position: absolute; inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  perspective: 900px;
+  perspective-origin: 64% 44%;
+  /* Keep the left column legible; the corridor lives on the right. */
+  mask-image: linear-gradient(to right, transparent 4%, #000 42%);
+  -webkit-mask-image: linear-gradient(to right, transparent 4%, #000 42%);
+}
+
+/* The light at the far end of the run. */
+.corridor__glow {
+  position: absolute; left: 64%; top: 44%;
+  width: 46vw; height: 46vw;
+  max-width: 620px; max-height: 620px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 50% 50%,
+    rgba(242, 200, 126, 0.42) 0%,
+    rgba(224, 163, 65, 0.17) 34%,
+    transparent 68%);
+  animation: lantern 11s var(--ease-soft) infinite alternate;
+}
+@keyframes lantern {
+  from { opacity: 0.72; transform: translate(-50%, -50%) scale(0.94); }
+  to   { opacity: 1;    transform: translate(-50%, -50%) scale(1.08); }
+}
+
+.corridor__stage {
+  position: absolute; left: 64%; top: 44%;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%)
+             rotateX(var(--tilt-x, 0deg))
+             rotateY(var(--tilt-y, 0deg));
+  transition: transform 500ms var(--ease-soft);
+}
+
+.corridor__ring {
+  position: absolute; left: 0; top: 0;
+  width: 19rem; height: 21rem;
+  margin: -11.5rem 0 0 -9.5rem;
+  border: 1.5px solid var(--gold);
+  border-bottom: 0;
+  border-radius: 9.5rem 9.5rem 0 0;
+  transform-style: preserve-3d;
+  opacity: 0;
+  animation: travel 13s linear infinite;
+  animation-delay: calc(var(--i) * -1.625s);
+}
+/* Rings emerge at the vanishing point, brighten as they near, then pass by. */
+@keyframes travel {
+  0%   { transform: translateZ(-1900px); opacity: 0; }
+  10%  { opacity: 0.9; }
+  62%  { opacity: 0.5; }
+  88%  { opacity: 0.08; }
+  100% { transform: translateZ(500px); opacity: 0; }
+}
+
+/* The ground the arches stand on, so they read as a built space. */
+.corridor__floor {
+  position: absolute; left: 64%; top: 44%;
+  width: 150vw; height: 150vh;
+  transform: translate(-50%, 0) rotateX(78deg);
+  transform-origin: 50% 0;
+  background:
+    linear-gradient(to bottom, rgba(224, 163, 65, 0.11), transparent 46%),
+    repeating-linear-gradient(90deg,
+      rgba(224, 163, 65, 0.09) 0 1px, transparent 1px 7rem);
+  mask-image: linear-gradient(to bottom, #000, transparent 55%);
+  -webkit-mask-image: linear-gradient(to bottom, #000, transparent 55%);
+}
+
+/* Dust drifting through the beam. Painted in JS; see initCorridor(). */
+.corridor__motes { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+@media (max-width: 920px) {
+  .hero--landing .hero__inner { grid-template-columns: 1fr; }
+  .corridor {
+    mask-image: linear-gradient(to bottom, #000, transparent 72%);
+    -webkit-mask-image: linear-gradient(to bottom, #000, transparent 72%);
+    perspective-origin: 50% 34%;
+  }
+  .corridor__glow, .corridor__stage, .corridor__floor { left: 50%; }
+  .corridor__glow { top: 34%; }
+  .corridor__stage { top: 34%; }
+  .corridor__floor { top: 34%; }
+  .corridor__ring { width: 13rem; height: 15rem; margin: -8.5rem 0 0 -6.5rem; border-radius: 6.5rem 6.5rem 0 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .corridor__glow { animation: none; opacity: 0.85; }
+  .corridor__motes { display: none; }
+  /* Hold the run still at three legible depths. */
+  .corridor__ring { animation: none; opacity: 0.5; }
+  .corridor__ring:nth-child(1) { transform: translateZ(-900px); opacity: 0.3; }
+  .corridor__ring:nth-child(2) { transform: translateZ(-420px); opacity: 0.45; }
+  .corridor__ring:nth-child(3) { transform: translateZ(-60px); opacity: 0.6; }
+  .corridor__ring:nth-child(n+4) { display: none; }
+  .corridor__stage { transition: none; }
+}
+
+/* ==========================================================================
    6. Stats
    ========================================================================== */
 
@@ -378,7 +540,16 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
   background: var(--ink-line);
   border-block: 1px solid var(--ink-line);
 }
-.stat { background: var(--ink); padding: var(--s-6) var(--s-5); text-align: center; }
+.stat { background: var(--ink); padding: var(--s-6) var(--s-5); text-align: left; }
+
+/* One figure carries the row. Four identical blocks read as a template. */
+.stat--lead { grid-column: span 2; }
+.stat--lead .stat__num { font-size: clamp(3rem, 7vw, 5rem); color: var(--gold-bright); }
+.stat--lead .stat__label { font-size: var(--fs-md); color: var(--paper); max-width: 22ch; }
+@media (max-width: 700px) {
+  .stat--lead { grid-column: span 1; }
+  .stat--lead .stat__num { font-size: clamp(2.6rem, 11vw, 3.4rem); }
+}
 .stat__num {
   font-family: var(--font-display);
   font-size: clamp(2.25rem, 4.5vw, 3.25rem);
@@ -391,6 +562,27 @@ th { font-weight: 650; color: var(--text-strong); background: var(--paper-sunk);
   font-variant-numeric: tabular-nums;
 }
 .stat__label { font-size: var(--fs-sm); color: var(--ink-soft); line-height: 1.45; }
+
+/* A section head that runs across the page instead of stacking down the
+   middle: heading on the left, the explanation set against it on the right. */
+.section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: var(--s-5) var(--s-8);
+  align-items: end;
+  margin-bottom: var(--s-8);
+}
+.section-head h2 { margin: 0; }
+.section-head p { margin: 0; }
+.section-head__rule {
+  grid-column: 1 / -1;
+  height: 1px;
+  background: linear-gradient(to right, var(--gold), transparent 55%);
+  margin-top: var(--s-2);
+}
+@media (max-width: 760px) {
+  .section-head { grid-template-columns: 1fr; align-items: start; }
+}
 
 /* ==========================================================================
    7. Cards

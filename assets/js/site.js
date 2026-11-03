@@ -418,6 +418,135 @@
   }
 
   /* ======================================================================
+     The landing corridor — pointer parallax and drifting motes
+
+     The arches themselves travel in CSS. This adds the two things CSS
+     cannot do: tilt the whole run against the pointer, and float dust
+     through the beam. Both are skipped entirely under reduced motion.
+     ====================================================================== */
+
+  const MOTE_DENSITY = 0.00006;   // motes per square pixel
+  const MOTE_CAP = 70;
+  const TILT_LIMIT = 5;           // degrees of parallax at the edges
+
+  function initCorridorParallax(corridor) {
+    const stage = corridor.querySelector('.corridor__stage');
+    if (!stage) return;
+
+    let queued = false;
+    let pointer = { x: 0.5, y: 0.5 };
+
+    function apply() {
+      queued = false;
+      // Invert X so the run leans away from the cursor, like looking past it.
+      const tiltY = (0.5 - pointer.x) * TILT_LIMIT * 2;
+      const tiltX = (pointer.y - 0.5) * TILT_LIMIT;
+      stage.style.setProperty('--tilt-y', tiltY.toFixed(2) + 'deg');
+      stage.style.setProperty('--tilt-x', tiltX.toFixed(2) + 'deg');
+    }
+
+    window.addEventListener('pointermove', function (event) {
+      if (event.pointerType !== 'mouse') return;
+      pointer = {
+        x: event.clientX / window.innerWidth,
+        y: event.clientY / window.innerHeight
+      };
+      if (queued) return;
+      queued = true;
+      window.requestAnimationFrame(apply);
+    }, { passive: true });
+
+    // Settle back to centre when the pointer leaves the window.
+    document.addEventListener('mouseleave', function () {
+      pointer = { x: 0.5, y: 0.5 };
+      window.requestAnimationFrame(apply);
+    });
+  }
+
+  function initMotes(canvas) {
+    const ctx = canvas.getContext && canvas.getContext('2d');
+    if (!ctx) return;
+
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    let width = 0;
+    let height = 0;
+    let motes = [];
+    let frame = 0;
+
+    function spawn(y) {
+      return {
+        x: Math.random() * width,
+        y: y,
+        r: 0.5 + Math.random() * 1.4,
+        rise: 0.10 + Math.random() * 0.26,
+        sway: 0.2 + Math.random() * 0.7,
+        phase: Math.random() * Math.PI * 2,
+        alpha: 0.12 + Math.random() * 0.38
+      };
+    }
+
+    function seed() {
+      const target = Math.min(MOTE_CAP, Math.round(width * height * MOTE_DENSITY));
+      motes = [];
+      for (let i = 0; i < target; i += 1) {
+        motes.push(spawn(Math.random() * height));
+      }
+    }
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      width = rect.width;
+      height = rect.height;
+      if (!width || !height) return;
+      canvas.width = Math.round(width * dpr);
+      canvas.height = Math.round(height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      seed();
+    }
+
+    function draw() {
+      frame = window.requestAnimationFrame(draw);
+      if (!width || !height) return;
+      ctx.clearRect(0, 0, width, height);
+      for (let i = 0; i < motes.length; i += 1) {
+        const m = motes[i];
+        m.y -= m.rise;
+        m.phase += 0.006;
+        if (m.y < -6) {
+          motes[i] = spawn(height + 6);
+          continue;
+        }
+        const x = m.x + Math.sin(m.phase) * m.sway * 10;
+        ctx.beginPath();
+        ctx.arc(x, m.y, m.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(242, 200, 126, ' + m.alpha.toFixed(3) + ')';
+        ctx.fill();
+      }
+    }
+
+    // Stop painting when the tab is hidden; nobody is watching.
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        window.cancelAnimationFrame(frame);
+      } else {
+        frame = window.requestAnimationFrame(draw);
+      }
+    });
+
+    window.addEventListener('resize', resize, { passive: true });
+    resize();
+    frame = window.requestAnimationFrame(draw);
+  }
+
+  function initCorridor() {
+    const corridor = document.querySelector('[data-corridor]');
+    if (!corridor || PREFERS_REDUCED_MOTION) return;
+    initCorridorParallax(corridor);
+    const canvas = corridor.querySelector('[data-motes]');
+    if (canvas) initMotes(canvas);
+  }
+
+  /* ======================================================================
      Boot
      ====================================================================== */
 
@@ -427,6 +556,7 @@
     markCurrentPage();
     initReveal();
     initCounters();
+    initCorridor();
     initInquiryForm();
     initArticleIndex();
     initArticleDetail();

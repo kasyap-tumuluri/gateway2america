@@ -17,44 +17,47 @@
 <main id="main">
 
   <!-- ===================== Hero ===================== -->
-  <section class="hero">
-    <div class="hero__light" aria-hidden="true"></div>
+  <section class="hero hero--landing">
     <div class="hero__grain" aria-hidden="true"></div>
 
-    <svg class="hero__arch" viewBox="0 0 400 420" aria-hidden="true" focusable="false">
-      <defs>
-        <linearGradient id="archGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%"   stop-color="#F2C87E" stop-opacity="1"/>
-          <stop offset="55%"  stop-color="#E0A341" stop-opacity=".55"/>
-          <stop offset="100%" stop-color="#E0A341" stop-opacity="0"/>
-        </linearGradient>
-      </defs>
-      <!-- Nested arches: a threshold seen in receding depth -->
-      <path class="arch-stroke" d="M40 420V170a160 160 0 0 1 320 0v250"/>
-      <path class="arch-stroke" d="M85 420V175a115 115 0 0 1 230 0v245" style="animation-delay:.55s"/>
-      <path class="arch-stroke" d="M130 420V180a70 70 0 0 1 140 0v240" style="animation-delay:.8s"/>
-      <path class="arch-stroke" d="M175 420V186a25 25 0 0 1 50 0v234" style="animation-delay:1.05s"/>
-    </svg>
+    <!-- The corridor: arches travelling toward you out of the light. -->
+    <div class="corridor" data-corridor aria-hidden="true">
+      <div class="corridor__glow"></div>
+      <div class="corridor__floor"></div>
+      <div class="corridor__stage">
+        <span class="corridor__ring" style="--i:0"></span>
+        <span class="corridor__ring" style="--i:1"></span>
+        <span class="corridor__ring" style="--i:2"></span>
+        <span class="corridor__ring" style="--i:3"></span>
+        <span class="corridor__ring" style="--i:4"></span>
+        <span class="corridor__ring" style="--i:5"></span>
+        <span class="corridor__ring" style="--i:6"></span>
+        <span class="corridor__ring" style="--i:7"></span>
+      </div>
+      <canvas class="corridor__motes" data-motes></canvas>
+    </div>
 
     <div class="wrap hero__inner">
-      <div class="hero__badges">
-        <span class="pill pill--gold">Certificate of Special Congressional Recognition &middot; PA-06</span>
-        <span class="pill pill--ink">Princeton Prize in Race Relations</span>
-      </div>
+      <div>
+        <p class="hero__creds">
+          <span>Certificate of Special Congressional Recognition, PA-06</span>
+          <span>Princeton Prize in Race Relations</span>
+        </p>
 
-      <h1>Nobody should have to figure out U.S. citizenship <span class="accent">on their own</span></h1>
+        <h1>Nobody should have to figure out U.S. citizenship <span class="accent">on their own</span></h1>
 
-      <p class="hero__lede">
-        Gateway2America is a small, free, volunteer-run service. We help people work out
-        how citizenship actually works in practice &mdash; which pathway fits your
-        situation, which official form goes with it, and what changed recently that you
-        might have missed. We answer questions, and we tutor for the civics and English
-        parts of the test if you want the practice.
-      </p>
+        <p class="hero__lede">
+          Gateway2America is a small, free, volunteer-run service. We help people work out
+          how citizenship actually works in practice &mdash; which pathway fits your
+          situation, which official form goes with it, and what changed recently that you
+          might have missed. We answer questions, and we tutor for the civics and English
+          parts of the test if you want the practice.
+        </p>
 
-      <div class="hero__actions">
-        <a class="btn btn--primary btn--lg" href="pathways.html">Find your pathway</a>
-        <a class="btn btn--ghost btn--lg" href="inquiries.html">Ask us a question</a>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="pathways.html">Find your pathway</a>
+          <a class="link-quiet" href="inquiries.html">or just ask us a question &rarr;</a>
+        </div>
       </div>
 
       <p class="hero__promise">
@@ -76,9 +79,9 @@
   <!-- ===================== Stats ===================== -->
   <section class="stats" aria-label="What we have done so far">
     <div class="stats__grid">
-      <div class="stat">
+      <div class="stat stat--lead">
         <span class="stat__num" data-count="100" data-suffix="+">0</span>
-        <span class="stat__label">inquiries answered</span>
+        <span class="stat__label">inquiries answered since October 2024</span>
       </div>
       <div class="stat">
         <span class="stat__num" data-count="4">0</span>
@@ -98,16 +101,16 @@
   <!-- ===================== What we do ===================== -->
   <section class="section">
     <div class="wrap">
-      <div class="text-center" style="max-width:62ch;margin-inline:auto;margin-bottom:var(--s-8)" data-reveal>
-        <span class="eyebrow">What we do</span>
+      <div class="section-head" data-reveal>
         <h2>Four kinds of help, all of it free</h2>
-        <p class="lede" style="margin-top:var(--s-4)">
+        <p class="lede">
           A quick note before anything else: we're volunteers rather than lawyers, so
           legal advice is off the table for us. Pretty much everything else is fair
           game, though &mdash; explaining how the system works in ordinary language,
           pointing you at the right official resource, and sticking with you while you
           work through it.
         </p>
+        <div class="section-head__rule" aria-hidden="true"></div>
       </div>
 
       <div class="screen3d">
