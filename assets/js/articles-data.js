@@ -1500,11 +1500,11 @@ window.G2A_ARTICLES = [
   date: '2026-04-19',
   category: 'Milestone',
   title: 'Gateway2America receives the Princeton Prize in Race Relations certificate',
-  summary: 'We have been awarded a Certificate of Accomplishment in the Princeton Prize in Race Relations for the Eastern Pennsylvania and Delaware region.',
+  summary: 'Founder Ronit Luthra has been awarded a Certificate of Accomplishment in the Princeton Prize in Race Relations for the Eastern Pennsylvania and Delaware region.',
   body: `
-    <p>Gateway2America has received a <strong>Certificate of Accomplishment in the
-    Princeton Prize in Race Relations</strong> for the Eastern Pennsylvania and
-    Delaware region.</p>
+    <p>Gateway2America's founder, <strong>Ronit Luthra</strong>, has received a
+    <strong>Certificate of Accomplishment in the Princeton Prize in Race
+    Relations</strong> for the Eastern Pennsylvania and Delaware region.</p>
     <p>The Princeton Prize in Race Relations recognises young people whose efforts have
     had a significant, positive effect on race relations in their schools or
     communities. Being recognised in the Eastern Pennsylvania and Delaware region
@@ -1581,8 +1581,9 @@ window.G2A_ARTICLES = [
   title: 'Gateway2America receives a Certificate of Special Congressional Recognition',
   summary: 'We have been recognised by Pennsylvania’s 6th congressional district with a Certificate of Special Congressional Recognition.',
   body: `
-    <p>Gateway2America has received a <strong>Certificate of Special Congressional
-    Recognition</strong> from Pennsylvania's 6th congressional district.</p>
+    <p>Gateway2America, founded by <strong>Ronit Luthra</strong>, has received a
+    <strong>Certificate of Special Congressional Recognition</strong> from
+    Pennsylvania's 6th congressional district.</p>
     <p>A month after the Princeton Prize certificate, this recognition from our own
     congressional district is humbling. It is a thank-you from the place where this
     work happens, for work done on behalf of people who live here.</p>
