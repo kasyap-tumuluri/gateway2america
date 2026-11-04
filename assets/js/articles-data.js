@@ -1502,7 +1502,8 @@ window.G2A_ARTICLES = [
   title: 'Gateway2America receives the Princeton Prize in Race Relations certificate',
   summary: 'Founder Ronit Luthra has been awarded a Certificate of Accomplishment in the Princeton Prize in Race Relations for the Eastern Pennsylvania and Delaware region.',
   body: `
-    <p>Gateway2America's founder, <strong>Ronit Luthra</strong>, has received a
+    <p>Gateway2America's founder,
+    <strong><a href="../ronit-luthra.html">Ronit Luthra</a></strong>, has received a
     <strong>Certificate of Accomplishment in the Princeton Prize in Race
     Relations</strong> for the Eastern Pennsylvania and Delaware region.</p>
     <p>The Princeton Prize in Race Relations recognises young people whose efforts have
@@ -1581,7 +1582,8 @@ window.G2A_ARTICLES = [
   title: 'Gateway2America receives a Certificate of Special Congressional Recognition',
   summary: 'We have been recognised by Pennsylvania’s 6th congressional district with a Certificate of Special Congressional Recognition.',
   body: `
-    <p>Gateway2America, founded by <strong>Ronit Luthra</strong>, has received a
+    <p>Gateway2America, founded by
+    <strong><a href="../ronit-luthra.html">Ronit Luthra</a></strong>, has received a
     <strong>Certificate of Special Congressional Recognition</strong> from
     Pennsylvania's 6th congressional district.</p>
     <p>A month after the Princeton Prize certificate, this recognition from our own

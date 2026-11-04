@@ -33,6 +33,7 @@ const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
 const PAGES = [
   { path: '/',                 changefreq: 'weekly',  priority: '1.0' },
   { path: '/about.html',       changefreq: 'monthly', priority: '0.8' },
+  { path: '/ronit-luthra.html', changefreq: 'monthly', priority: '0.8' },
   { path: '/pathways.html',    changefreq: 'monthly', priority: '0.9' },
   { path: '/inquiries.html',   changefreq: 'monthly', priority: '0.9' },
   { path: '/redirection.html', changefreq: 'weekly',  priority: '0.8' },
